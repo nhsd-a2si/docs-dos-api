@@ -16,7 +16,9 @@ The API provides two search resources:
 
 ## Searching by Location & Opening Hours ##
 
-The most common operation will be to find a dispenser which can dispense a prescription to the patient within the timeframe dictated by the patient disposition. Patients disposition is allocated by NHS Pathways and include values like `Dx85	- Repeat prescription required within 2 hours`. Passing a number of hours to the API will ensure that all dispensers returned in results are open within at least a portion of that timeframe. Once open dispensers are identified the system orders by distance and returs the five nearest. If a maximum distance filter is included this is applied, otherwise the system will default to a maximum distance of 38km.
+The most common operation will be to find a dispenser which can dispense a prescription to the patient within the timeframe dictated by the patient disposition. Patients disposition is allocated by NHS Pathways and include values like `Dx85	- Repeat prescription required within 2 hours`.
+
+Passing a number of hours to the API will ensure that all dispensers returned in results are open within at least a portion of that timeframe. Once open dispensers are identified the system orders by distance and returs the five nearest. If a maximum distance filter is included this is applied, otherwise the system will default to a maximum distance of 38km.
 
 ## Search Results ##
 

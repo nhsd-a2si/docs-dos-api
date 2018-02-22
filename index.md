@@ -10,7 +10,7 @@ summary: An introduction to the Directory of Services API suite
 
 ## Introduction ##
 
-The Directory of Service (DoS) contains information a wide range of health and care services across England. It is a core part of the Urgent & Emergency Care system workflow, and is responsible for directing patients to appropriate services 24x7x365.
+The Directory of Service (DoS) contains information a wide range of health and care services across England. It is a core part of the Urgent & Emergency Care system workflow, and is responsible for directing patients to appropriate services 24 x 7 x 365.
 
 This site provides some information on the APIs available for the DoS, and technical details on how to use them.
 

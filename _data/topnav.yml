@@ -8,9 +8,7 @@ topnav_dropdowns:
 - title: Topnav dropdowns
   folders:
     - title: External Links
-      folderitems:        
-        - title: EPS Prescribing Specification
-          external_url: https://developer.nhs.uk/library/systems/electronic-prescription-service-eps/
+      folderitems:
         - title: NHS Developer Network
           external_url: https://developer.nhs.uk
 #    - title: Capability Packs

@@ -2,16 +2,17 @@
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
-topnav_title: NHS EPS DoS API
+topnav_title: NHS DoS API
 # this appears on the top navigation bar next to the home button
 
-site_title: NHS EPS DoS API
+site_title: NHS DoS API
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
 
 company_name: NHS Digital
 # this appears in the footer
 
-github_editme_path: /edit/gh-pages/
+github_editme_path:
+# github_editme_path: /edit/gh-pages/
 # if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
 
 #disqus: true
@@ -37,9 +38,10 @@ exclude:
   - .vscode/
   - .idea/
   - .gitignore
+  - Gemfile.lock
 # these are the files and directories that jekyll will exclude from the build
 
-feedback_email: eps@nhs.net
+feedback_email: m.stibbs@nhs.net
 # used as a contact email for the Feedback link in the top navigation bar
 
 feedback_disable: true
@@ -93,17 +95,17 @@ sidebars:
 description: "Description of the site."
 # the description is used in the feed.xml file
 
-sitemap: true
+sitemap: false
 
 # needed for sitemap.xml file only
-url: https://nhsconnect.github.io/spine-eps-tracker
+url: https://nhsd-a2si.github.io/dos-api-docs/
 
-repository: github_account/github_repo
+repository: nhsd-a2si/dos-api-docs
 
 gist:
   noscript: false
 
-gems:
+plugins:
    - jekyll-github-metadata
    - jekyll-mentions
    - jemoji
