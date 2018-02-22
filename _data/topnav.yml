@@ -1,0 +1,19 @@
+topnav:
+- title: Topnav
+  items:
+    - title: News
+      url: news.html
+
+topnav_dropdowns:
+- title: Topnav dropdowns
+  folders:
+    - title: External Links
+      folderitems:        
+        - title: EPS Prescribing Specification
+          external_url: https://developer.nhs.uk/library/systems/electronic-prescription-service-eps/
+        - title: NHS Developer Network
+          external_url: https://developer.nhs.uk
+#    - title: Capability Packs
+#      folderitems:
+#        - title: Capability One
+#          url: capability_one.html
