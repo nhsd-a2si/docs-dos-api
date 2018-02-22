@@ -1,21 +1,28 @@
 ---
-title: Introduction to EPS DoS API
+title: Introduction to Directory of Services API suite
 keywords: homepage
 tags: [getting_started]
 sidebar: overview_sidebar
 permalink: index.html
 toc: true
-summary: An introduction to the EPS Directory of Service API.
+summary: An introduction to the Directory of Services API suite
 ---
 
 ## Introduction ##
 
-The EPS Directory of Service (DoS) API is an API providing information about dispensing services, and includes search functionality which lists dispensers who shold be able to provide dispensing services for a patient with a given location and urgency. 
+The Directory of Service (DoS) contains information a wide range of health and care services across England. It is a core part of the Urgent & Emergency Care system workflow, and is responsible for directing patients to appropriate services 24x7x365.
 
-{% include warning.html content="This site is provided for information only and is intended for those engaged with NHS Digital on the development of the EPS DoS APIs. It is advised not to develop against these specifications until a formal announcement has been made." %}
+This site provides some information on the APIs available for the DoS, and technical details on how to use them.
+
+{% include warning.html content="This site is provided for information only and is intended for those engaged with NHS Digital wishing to develop against the DoS APIs. We would also advise speaking with a member of the DoS team before investing any significant time in developing against these specifications." %}
+
 
 ## Purpose ##
 
-The EPS DoS API is a means of making existing information from NHS Choices, NHS Pathways and the NHS Organisation Data Service (ODS) available to prescribing systems from a single consolidaetd resource with a high degree of availability. Assured prescribing systems may use this to identify a dispenser who can meet a patient's needs and use this in sending prescriptions either via EPS or paper-based means. 
+The Directory of Services (DoS) provides APIs to allow third-party systems to retrieve service information. Currently, a combination of search functions and individual record retrieval is supported.
 
-{% include note.html content="In order to ensure availability for clinical use the live DoS API is only available to assured EPS prescribing systems." %}
+The search functions will return a list of recommended services based on a combination of search parameters - there are a couple of different combinations that can be used to do this.
+
+The search functions return an ordered list of health & care services that are deemed approprioate for parameters that were supplied. The search algorithm considers a number of aspects including (but not limited to) patient's age, sex, and current location; the patient's clinical need expressed via clinical terminology; and the timeframe within which the patient needs a service. It is also possible to search for services of specific type(s) using those similar parameters.
+
+{% include note.html content="At present, access to the DoS APIs is granted on a case by case basis in order to ensure the appropriate level of governance and traceability around use of the data within." %}
