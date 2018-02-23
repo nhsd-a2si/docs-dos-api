@@ -1,6 +1,6 @@
 ---
 title: "Development"
-tagName: development
+tagName: develop
 search: exclude
 permalink: tag_development.html
 sidebar: overview_sidebar
