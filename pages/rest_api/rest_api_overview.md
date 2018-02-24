@@ -3,7 +3,7 @@ title: SOAP API Overview
 keywords: develop
 tags: [develop]
 sidebar: overview_sidebar
-permalink: soap_api_overview.html
+permalink: develop_overview.html
 summary: An overview of the DoS SOAP API
 ---
 

@@ -1,35 +1,32 @@
 swagger: '2.0'
 info:
-  title: EPS DoS API
-  description: A reliable Directory of Service for EPS Dispensers
-  version: "v0.0.2"
+  title: Directory of Services REST API
+  description: A RESTish API for searching the Directory of Services
+  version: "v1.0.0"
 # the domain of the service
-host: dos.eps.digital.nhs.uk
+host: www.pathwaysdos.nhs.uk
 # array of all schemes that your API supports
 schemes:
   - https
 # will be prefixed to all paths
-basePath: /v0.0.2
+basePath: /app/controllers/api/v1.0/services
 produces:
   - application/json
 securityDefinitions:
   ReadOnlySecurity:
     type: basic
     description: All operations require basic auth, including all read operations.
-  WriteSecurity:
-    type: basic
-    description: All write operations will require write permission using basic auth.
 
 # By default all methods need basic auth for read access
 security:
-  - ReadOnlySecurity: [] 
+  - ReadOnlySecurity: []
 
 paths:
   /dispenser/{ods}:
     get:
       summary: Dispenser
       description: |
-        A dispensing contractor, currently limited to only EPS-enabled dispensing contractors who are able to dispense EPS Release 2 prescriptions 
+        A dispensing contractor, currently limited to only EPS-enabled dispensing contractors who are able to dispense EPS Release 2 prescriptions
         and are able to be physically accessed by the patient.
       parameters:
         - in: path
@@ -44,19 +41,19 @@ paths:
             Warning:
               type: string
               description: |
-                This header is added where one of the backing services is unavailable so the response data is being served from the cache. 
+                This header is added where one of the backing services is unavailable so the response data is being served from the cache.
                   The `111 - "Revalidation Failed"` warning code will be used in this circumstance.
           schema:
             $ref: '#/definitions/dispenser'
 
-            
+
         404:
           description: Dispenser not found
           headers:
             Warning:
               type: string
               description: |
-                This header is added where one of the backing services is unavailable so the response data is being served from the cache. 
+                This header is added where one of the backing services is unavailable so the response data is being served from the cache.
                   The `111 - "Revalidation Failed"` warning code will be used in this circumstance.
         429:
           description: Exceeded rate limit
@@ -64,7 +61,7 @@ paths:
             Warning:
               type: string
               description: |
-                This header is added where one of the backing services is unavailable so the response data is being served from the cache. 
+                This header is added where one of the backing services is unavailable so the response data is being served from the cache.
                   The `111 - "Revalidation Failed"` warning code will be used in this circumstance.
         default:
           description: Unexpected error
@@ -73,8 +70,8 @@ paths:
     put:
       summary: Create Dispenser resource.
       description: |
-        Creates a dispensing contractor, overwriting any that exist with the same ODS code. The PUT method is not generally available other than to 
-        support testing in some environments. 
+        Creates a dispensing contractor, overwriting any that exist with the same ODS code. The PUT method is not generally available other than to
+        support testing in some environments.
       parameters:
       - in: path
         name: ods
@@ -97,8 +94,8 @@ paths:
     delete:
       summary: Remove Dispenser resource.
       description: |
-        Deletes the identified dispensing contractor. The DELETE method is not generally available other than to 
-        support testing in some environments. 
+        Deletes the identified dispensing contractor. The DELETE method is not generally available other than to
+        support testing in some environments.
       parameters:
       - in: path
         name: ods
@@ -117,14 +114,14 @@ paths:
 
   /dispensers/byLocationOpening:
     get:
-      summary: Search dispensers by opening hours & location 
+      summary: Search dispensers by opening hours & location
       description: |
-        Searches for a suitable dispenser based on patient location and opening hours, ensuring that opening times fall within the timeframe required. 
-        Optionally filtering by service type and distance. Returns a maximum of five matching dispensers. 
+        Searches for a suitable dispenser based on patient location and opening hours, ensuring that opening times fall within the timeframe required.
+        Optionally filtering by service type and distance. Returns a maximum of five matching dispensers.
       parameters:
       - name: postcode
         in: query
-        description: Postcode of patient location. 
+        description: Postcode of patient location.
         required: true
         type: string
       - name: distance
@@ -142,7 +139,7 @@ paths:
         type: number
         format: integer
         description: |
-            The number of hours from the current time within which the service must be open. Takes account of bank holidays, specified dates and timezone offsets. 
+            The number of hours from the current time within which the service must be open. Takes account of bank holidays, specified dates and timezone offsets.
       - name: availability_start
         in: query
         type: string
@@ -163,7 +160,7 @@ paths:
             Warning:
               type: string
               description: |
-                This header is added where one of the backing services is unavailable so the response data is being served from the cache. 
+                This header is added where one of the backing services is unavailable so the response data is being served from the cache.
                   The `111 - "Revalidation Failed"` warning code will be used in this circumstance.
           schema:
             type: array
@@ -175,7 +172,7 @@ paths:
             Warning:
               type: string
               description: |
-                This header is added where one of the backing services is unavailable so the response data is being served from the cache. 
+                This header is added where one of the backing services is unavailable so the response data is being served from the cache.
                   The `111 - "Revalidation Failed"` warning code will be used in this circumstance.
           schema:
             $ref: '#/definitions/Error'
@@ -185,13 +182,13 @@ paths:
             Warning:
               type: string
               description: |
-                This header is added where one of the backing services is unavailable so the response data is being served from the cache. 
+                This header is added where one of the backing services is unavailable so the response data is being served from the cache.
                   The `111 - "Revalidation Failed"` warning code will be used in this circumstance.
         default:
           description: Unexpected error
           schema:
             $ref: '#/definitions/Error'
-            
+
   /dispensers/byName/{name}:
     get:
       summary: Search dispensers by name
@@ -212,7 +209,7 @@ paths:
           in: query
           description: The maximum distance from postcode to search, in km. Defaults to 36. Ignired where postcode not present.
           required: false
-          allowEmptyValue: true            
+          allowEmptyValue: true
           type: number
           format: decimal
           default: 36.0
@@ -223,7 +220,7 @@ paths:
             Warning:
               type: string
               description: |
-                This header is added where one of the backing services is unavailable so the response data is being served from the cache. 
+                This header is added where one of the backing services is unavailable so the response data is being served from the cache.
                   The `111 - "Revalidation Failed"` warning code will be used in this circumstance.
           schema:
             type: array
@@ -235,7 +232,7 @@ paths:
             Warning:
               type: string
               description: |
-                This header is added where one of the backing services is unavailable so the response data is being served from the cache. 
+                This header is added where one of the backing services is unavailable so the response data is being served from the cache.
                   The `111 - "Revalidation Failed"` warning code will be used in this circumstance.
           schema:
             $ref: '#/definitions/Error'
@@ -245,13 +242,13 @@ paths:
             Warning:
               type: string
               description: |
-                This header is added where one of the backing services is unavailable so the response data is being served from the cache. 
+                This header is added where one of the backing services is unavailable so the response data is being served from the cache.
                   The `111 - "Revalidation Failed"` warning code will be used in this circumstance.
         default:
           description: Unexpected error
           schema:
             $ref: '#/definitions/Error'
-            
+
   /status:
     get:
       summary: Current status of the API
@@ -268,7 +265,7 @@ paths:
             Warning:
               type: string
               description: |
-                This header is added where one of the backing services is unavailable so the response data is being served from the cache. 
+                This header is added where one of the backing services is unavailable so the response data is being served from the cache.
                   The `111 - "Revalidation Failed"` warning code will be used in this circumstance.
         500:
           description: API is not available, but is still able to serve responses.
@@ -276,7 +273,7 @@ paths:
             Warning:
               type: string
               description: |
-                This header is added where one of the backing services is unavailable so the response data is being served from the cache. 
+                This header is added where one of the backing services is unavailable so the response data is being served from the cache.
                   The `111 - "Revalidation Failed"` warning code will be used in this circumstance.
           schema:
             $ref: '#/definitions/Error'
@@ -318,7 +315,7 @@ definitions:
           postcode:
             type: string
       distance:
-        description: Distance from patient location in km, where this has been provided in a search. 
+        description: Distance from patient location in km, where this has been provided in a search.
         type: number
         format: decimal
       patient_contact:
@@ -337,7 +334,7 @@ definitions:
             type: string
           fax:
             type: string
-          email: 
+          email:
             type: string
       location:
         type: object
@@ -376,11 +373,11 @@ definitions:
           specified_date:
             type: array
             items:
-              description: A map of date string to opening time object. Date is formated as ISO 8609 YYYY-MM-DD. Null values indicate complete closure on that date. 
+              description: A map of date string to opening time object. Date is formated as ISO 8609 YYYY-MM-DD. Null values indicate complete closure on that date.
               type: object
               additionalProperties:
                 $ref: '#/definitions/OpeningTime'
-    example: 
+    example:
       ods: FLM42
       name: Vantage Pharmacy
       service_type: eps_pharmacy
@@ -403,22 +400,22 @@ definitions:
       opening:
         open_247: false
         sun: null
-        mon: 
+        mon:
           - open: "08:00"
             close: "18:00"
-        tue: 
+        tue:
           - open: "08:00"
             close: "18:00"
-        wed: 
+        wed:
           - open: "08:00"
             close: "12:00"
-        thu: 
+        thu:
           - open: "08:00"
             close: "18:00"
         fri:
           - open: "08:00"
             close: "18:00"
-        sat: 
+        sat:
           - open: "09:00"
             close: "12:00"
         bank_holiday:
@@ -441,7 +438,7 @@ definitions:
         close:
           type: string
           description: Unqualified local time in HH:MM format
-          
+
   Error:
     type: object
     properties:

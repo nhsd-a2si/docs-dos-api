@@ -1,8 +1,8 @@
 entries:
 - title: Directory of Services APIs
   product: DoS API<br/>
-  version: v0.0.1
-  levels: one
+  version: v1.0.0
+  levels: two
   folders:
 
   - title: Get Started
@@ -19,19 +19,9 @@ entries:
       url: /overview_glossary.html
       output: web
 
-#  - title: Explore
-#    output: web
-#    folderitems:
-#    - title: Overview
-#      url: /explore_overview.html
-#      output: web
-
   - title: Develop
     output: web
     folderitems:
-    - title: Overview
-      url: /develop_overview.html
-      output: web
     - title: Authentication
       url: /authentication.html
       output: web
@@ -44,27 +34,36 @@ entries:
     - title: Searching for Services
       url: /searching.html
       output: web
-    - title: REST Endpoints Reference
-      url: /rest_endpoints_reference.html
-      output: web
 
-  - title: The SOAP API
+  - title: Assure
     output: web
     folderitems:
-    - title: Overview
-      url: /soap_api_overview.html
+    - title: Acceptable Usage Policy
+      url: /acceptable_usage_policy.html
       output: web
 
-  - title: The REST API
+  - title: APIs
     output: web
     folderitems:
-    - title: Overview
-      url: /rest_api_overview.html
+    - title: SOAP API
       output: web
+      folderitems:
+      - title: Overview
+        url: /soap_api_overview.html
+        output: web
+    - title: REST API
+      output: web
+      folderitems:
+      - title: Overview
+        url: /rest_api_overview.html
+        output: web
+      - title: REST Endpoints Reference
+        url: /rest_endpoints_reference.html
+        output: web
 
   - title: Deploy
     output: web
     folderitems:
-    - title: Overview
+    - title: Environments
       url: /environments_overview.html
       output: web
