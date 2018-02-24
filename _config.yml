@@ -2,10 +2,10 @@
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
-topnav_title: NHS DoS API
+topnav_title: NHS Directory of Services API
 # this appears on the top navigation bar next to the home button
 
-site_title: NHS DoS API
+site_title: NHS Directory of Services API
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
 
 company_name: NHS Digital
@@ -33,6 +33,8 @@ host: 127.0.0.1
 
 port: 4005
 # the port where the preview is rendered. You can leave this as is unless you have other Jekyll builds using this same port that might cause conflicts. in that case, use another port such as 4006.
+
+include: ["_pages"]
 
 exclude:
   - .vscode/
@@ -92,8 +94,10 @@ defaults:
 sidebars:
 - overview_sidebar
 
-description: "Description of the site."
+description: "Documentation for the Directory of Services API suite"
 # the description is used in the feed.xml file
+
+permalink: /:title/
 
 sitemap: false
 

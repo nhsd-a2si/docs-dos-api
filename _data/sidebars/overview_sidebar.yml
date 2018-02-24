@@ -12,58 +12,85 @@ entries:
       url: /index.html
       output: web, pdf
       type: homepage
-    - title: Key Concepts
-      url: /key_concepts.html
-      output: web
     - title: Glossary
       url: /overview_glossary.html
       output: web
 
+  - title: Explore
+    output: web
+    folderitems:
+    - title: Key Concepts
+      url: /key_concepts.html
+      output: web
+    - subfolders:
+      - title: SOAP API
+        output: web
+        url: /soap_api_overview.html
+        subfolderitems:
+        - title: Overview
+          url: /soap_api_overview.html
+          output: web
+        - title: Authentication
+          url: /soap_api_auth.html
+          output: web
+        - title: Errors
+          url: /soap_api_errors.html
+          output: web
+        - title: CheckCapacitySummary
+          url: /soap_api_ccs.html
+          output: web
+        - title: ServiceDetailsById
+          url: /soap_api_sdbid.html
+          output: web
+        - title: WSDL Documentation (v1.3)
+          url: /soap_v1-3/
+          output: web
+      - title: REST API
+        output: web
+        url: /rest_api_overview.html
+        subfolderitems:
+        - title: Overview
+          url: /rest_api_overview.html
+          output: web
+        - title: Authentication
+          url: /rest_api_authentication.html
+          output: web
+        - title: Errors
+          url: /errors.html
+          output: web
+        - title: OpenAPI Reference
+          url: /rest_endpoints_reference.html
+          output: web
+
   - title: Develop
     output: web
     folderitems:
-    - title: Authentication
-      url: /authentication.html
-      output: web
-    - title: API Limits
-      url: /api_limits.html
-      output: web
-    - title: Errors
-      url: /errors.html
-      output: web
-    - title: Searching for Services
-      url: /searching.html
+    - title: Testing
+      url: /api_testing.html
       output: web
 
   - title: Assure
     output: web
     folderitems:
-    - title: Acceptable Usage Policy
-      url: /acceptable_usage_policy.html
+    - title: Overview
+      url: /assure_overview.html
       output: web
-
-  - title: APIs
-    output: web
-    folderitems:
-    - title: SOAP API
-      output: web
-      folderitems:
-      - title: Overview
-        url: /soap_api_overview.html
-        output: web
-    - title: REST API
-      output: web
-      folderitems:
-      - title: Overview
-        url: /rest_api_overview.html
-        output: web
-      - title: REST Endpoints Reference
-        url: /rest_endpoints_reference.html
-        output: web
 
   - title: Deploy
     output: web
     folderitems:
+    - title: Overview
+      url: /deploy_overview.html
+      output: web
     - title: Environments
       url: /environments_overview.html
+      output: web
+    - title: API Limits
+      url: /api_limits.html
+      output: web
+    - title: API Monitoring
+      url: /api_monitoring.html
+      output: web
+    - title: Acceptable Usage Policy
+      url: /acceptable_usage_policy.html
       output: web
