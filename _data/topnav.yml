@@ -11,7 +11,3 @@ topnav_dropdowns:
       folderitems:
         - title: NHS Developer Network
           external_url: https://developer.nhs.uk
-#    - title: Capability Packs
-#      folderitems:
-#        - title: Capability One
-#          url: capability_one.html
