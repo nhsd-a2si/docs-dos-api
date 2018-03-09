@@ -10,11 +10,19 @@ published: true
 
 ## The SOAP API ##
 
-*Also sometimes referred to as **CheckCapacitySummary***
-
 The SOAP API is the primary API used by NHS 111 services. It provides consumers with a curated search function, and access to technical endpoint information for services to aid with transfer of care for patients.
 
+{% include note.html content="The SOAP API is sometimes referred to as **CheckCapacitySummary**, which is actually one of the web methods available." %}
+
 ## API Use Case ##
+
+The SOAP API supports the following high-level use cases:
+
+**Find an appropriate list of services for a specific clinical need**
+
+
+**Get technical endpoint information for a given service**
+
 
 ## WSDL Documentation ##
 
