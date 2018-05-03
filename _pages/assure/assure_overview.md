@@ -9,7 +9,7 @@ summary: An overview of the technical assurance process and tools.
 
 ## Technical Accediation
 
-TBC
+There is no formal technical accreditation currently.
 
 ## Integration Testing
 
