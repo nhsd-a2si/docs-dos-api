@@ -9,4 +9,4 @@ summary: Information to support deploying against DoS APIs
 
 ## Deployment Overview
 
-This section provides information you will need in order to deploy your application against the DoS API suite.
+This section provides information you will need in order to get your application deployed against the live DoS APIs.
