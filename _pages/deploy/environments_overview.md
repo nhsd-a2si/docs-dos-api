@@ -8,10 +8,10 @@ summary: An overview of the DoS environments, and how they should be used
 ---
 
 ### Environments ###
-There are a number of test environments available for general use in order to allow API and application testing:
+There are a number of environments available, some of which are available for general use in order to allow API and application testing:
 
-  * **Live** - The production environement only by assured prescribing systems
-  * **Pre-production** - Used in non functional testing of both API and applications
+  * **Live** - The production environment for use only by assured prescribing systems
+  * **Pre-production** - Used for interanl non-functional testing of both API and applications
   * **Integration** - Used for end to end application integration and user testing
   * **UAT 2 / 3** - Used to support user acceptance testing of new releases before they are deployed to the Live environment
 
