@@ -47,6 +47,15 @@ Below is an example of some disposition codes:
 
 This is a proprietary coding system developed to support the NHS Pathways triage product.
 
-The codes are designed to be used in pairs to provide clinical context to a search.
+The codes are designed to be used in pairs to provide clinical context to a search. The Symptom Group (SG) describes the presenting issue and the Symptom Discriminator (SD) describes the clinical need. Each SD may be linked to one or more SGs.
+e.g. (note: combinations which do not search the DoS are not shown here)
 
-e.g.
+| SG ID  | SG Description                   |  SD ID   | SD Description                                              |
+|------- | -------------------------------- | -------- | ------------------------------------------------------------|
+| SG1011 |	Ankle or Foot Injury, Blunt   	| SD4003   |	PC full Primary Care assessment and prescribing capability |
+| SG1011 |	Ankle or Foot Injury, Blunt   	| SD4010   |	ALL assault, sexual                                        |
+| SG1011 |	Ankle or Foot Injury, Blunt	    | SD4052   |	ED full ED assessment and management capability            |
+| SG1011 |	Ankle or Foot Injury, Blunt	    | SD4304   |	ED unable to weightbear                                    |
+| SG1010 |  Allergic Reaction               | SD4003   |  PC full Primary Care assessment and prescribing capability |
+| SG1010 |  Allergic Reaction               |	SD4020   |	PC assessment and management capability, minor condition   |
+| SG1010 |  Allergic Reaction               |	SD4052   |	ED full ED assessment and management capability            |
