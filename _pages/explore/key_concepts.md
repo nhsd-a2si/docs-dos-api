@@ -47,7 +47,7 @@ Below is an example of some disposition codes:
 
 This is a proprietary coding system developed to support the NHS Pathways triage product.
 
-The codes are designed to be used in pairs to provide clinical context to a search. The Symptom Group (SG) describes the presenting issue and the Symptom Discriminator (SD) describes the clinical need. Each SD may be linked to one or more SGs.
+The codes are designed to be used in pairs to provide clinical context to a search. The Symptom Group (SG) describes the presenting issue and the Symptom Discriminator (SD) describes the clinical need. Each SD may be linked to one or more SG.
 e.g. (note: combinations which do not search the DoS are not shown here)
 
 | SG ID  | SG Description                   |  SD ID   | SD Description                                              |
