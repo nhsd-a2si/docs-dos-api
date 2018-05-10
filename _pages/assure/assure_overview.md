@@ -7,7 +7,7 @@ permalink: assure_overview.html
 summary: An overview of the technical assurance process and tools.
 ---
 
-## Technical Accediation
+## Technical Accreditation
 
 There is no formal technical accreditation currently.
 
