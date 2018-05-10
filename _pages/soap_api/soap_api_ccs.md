@@ -13,7 +13,7 @@ published: true
 CheckCapacitySummary allows a consumer to perform a fully-ranked (curated) search to find services that can provide appropriate care to meet a patient's clinical need
 
 | Request | A non-identifiable representation of a 'clinical case' |
-| Returns | A curated, ordered set of service results (valid requests will always return some results - see "Catch All Results") |
+| Returns | A curated, ordered set of service results (valid requests should always return some results - see "Catch All Results") |
 
 ## Search Logic
 
