@@ -20,7 +20,7 @@ You may see references to 'profiling' when working with the DoS; the word 'profi
 ### Service Types ###
 Most records within the DoS are a 'service' record of some type.
 
-A complete list of the different service types can be found here: (https://github.com/nhsd-a2si-data/dos-reference-data){:target="_blank"}
+A complete list of the different service types can be found [here.](https://github.com/nhsd-a2si-data/dos-reference-data){:target="_blank"}
 
 Most service types behave in the same way, but there are a few which have special status or attributes. These are:
 
