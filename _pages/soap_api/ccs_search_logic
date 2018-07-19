@@ -3,7 +3,7 @@ title: Check Capacity Summary Search Logic
 keywords: develop, validation, rules
 tags: [testing,integration,deployment, logic, rules, validate]
 sidebar: overview_sidebar
-permalink: null
+permalink: ccs_logic.html
 summary: Search logic for the CheckCapacitySummary SOAP method
 published: false
 ---
@@ -42,8 +42,8 @@ Current default value: 60
 Validate Postcode
 The postcode is used to ensure that services returned are within an appropriate travelling distance for the patient and to calculate the distance from patient values which are included in the return (displayed in miles). Therefore this is a mandatory value and must be a valid postcode.
 Postcodes are validated using the following rules:
-•	A null value or missing element is not accepted
-•	The postcode must be valid (i.e. exist in the DoS database – see note below)
+* A null value or missing element is not accepted
+* The postcode must be valid (i.e. exist in the DoS database – see note below)
 Failure to comply with any or all of these rules returns an error.
 
 *What is a valid postcode in the DoS?*
