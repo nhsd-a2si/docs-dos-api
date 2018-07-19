@@ -1,5 +1,5 @@
 ---
-title: SOAP API - CheckCapacitySummary
+title: SOAP API - CheckCapacitySummary v1.3
 keywords: develop
 tags: [testing,integration,deployment]
 sidebar: overview_sidebar
@@ -12,8 +12,10 @@ published: true
 
 CheckCapacitySummary allows a consumer to perform a fully-ranked (curated) search to find services that can provide appropriate care to meet a patient's clinical need
 
-| Request | A non-identifiable representation of a 'clinical case' |
-| Returns | A curated, ordered set of service results (valid requests should always return some results - see "Catch All Results") |
+| Type    |   Description                                                                                                          |
+|---------|------------------------------------------------------------------------------------------------------------------------|
+| Request | A non-identifiable representation of a 'clinical case'                                                                 |
+| Response | A curated, ordered set of service results (valid requests should always return some results - see "Catch All Results") |
 
 ## Search Logic
 
@@ -23,6 +25,7 @@ These steps can be thought of as a 'filter pipeline', with each step of the pipe
 
 There are several different types of filters that are applied:
 
-* Basic permissions - e.g. what does your API account allow you to search for
-* Service attribute filters - e.g. remove results which do not match the required attributes of the search
-* Ranking filters - e.g. which services should be returned as a priority over other services
+* Basic permissions - validate the XML, the account permissions and some initial parameters
+* Service attribute filters - discount a large number of services based on distance, symptom group (SG), gender and GP surgery
+* Fine filter - filter remaining services based on the other parameters and begin Gap processing
+* Calculate display order - determine the order in which services return, based on ranking and other rules
