@@ -3,9 +3,9 @@ title: Check Capacity Summary Search Logic
 keywords: develop, validation, rules
 tags: [testing,integration,deployment, logic, rules, validate]
 sidebar: overview_sidebar
-permalink: 
+permalink: null
 summary: Search logic for the CheckCapacitySummary SOAP method
-published: yes
+published: false
 ---
 
 
@@ -14,3 +14,8 @@ published: yes
 The search is split into several sections, each of which filter out more services until a set of valid results remain. These results are then grouped and ordered according to a set of rules.
 
 ## Initial Request Validation ##
+
+The first set of filters check the xml and the user credentials, as well as ensuring that some of the parameters passed in are valid. This section describes those checks.
+
+### Validate XML
+
