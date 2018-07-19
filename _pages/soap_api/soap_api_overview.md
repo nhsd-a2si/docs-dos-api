@@ -18,11 +18,23 @@ The SOAP API is the primary API used by NHS 111 services. It provides consumers 
 
 The SOAP API supports the following high-level use cases:
 
-**Find an appropriate list of services for a specific clinical need**
+* Find an appropriate list of services for a specific clinical need
 
+* Get technical endpoint information for a given service
 
-**Get technical endpoint information for a given service**
+* Obtain capacity information for specified hospitals or wards
 
+## API Versions ##
+
+To allow for the release of new features there may be more than one supported version of the API available. Following the release of a new API, consumers are given time to make any required changes before moving to the new version. It is possible to use different versions by passing in the required version number in the request. Where no version number is passed in, the default version is used.
+
+**Current Supported Versions**
+
+v1.3
+
+**Default Version**
+
+v1.3
 
 ## WSDL Documentation ##
 
@@ -37,6 +49,7 @@ The SOAP API provides the following methods:
 |----------------------|-----------------------------------------------------------------------------------------|
 | [CheckCapacitySummary](/soap_api_ccs.html) | Perform a fully-ranked (curated) clinical search to find services appropriate for a clinical need |
 | [ServiceDetailsById](/soap_api_sdbid.html)   | Retrieve technical endpoint details for a specific Service ID or ODS code               |
+| GetHospitalScores  | Retrieve capacity data for a specific set of hospitals | 
 
 The path to the SOAP API is: **https://???.pathwaysdos.nhs.uk/app/api/webservices** where **???** is replaced with the subdomain relating to the [environment](/environments_overview.html) you are targeting.
 
@@ -54,3 +67,9 @@ You can grab the latest version (v1.3) of the WSDL from here: [https://www.pathw
 
 | Request | A service identifier - either ServiceId or OdsCode |
 | Returns | A list of technical endpoint details (0 or more) |
+
+
+### GetHospitalScores
+
+| Request | Username and password - no search parameters required |
+| Returns | ODS code and Overall Pressure Score (only services profiled with a Beds or ED capacity grid) |
