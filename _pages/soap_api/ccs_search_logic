@@ -1,0 +1,5 @@
+## Overview
+
+The search is split into several sections, each of which filter out more services until a set of valid results remain. These results are then grouped and ordered according to a set of rules.
+
+## Initial Request Validation
