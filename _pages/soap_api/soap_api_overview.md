@@ -56,20 +56,25 @@ The path to the SOAP API is: **https://???.pathwaysdos.nhs.uk/app/api/webservice
 You can grab the latest version (v1.3) of the WSDL from here: [https://www.pathwaysdos.nhs.uk/app/api/webservices?wsdl=1.3](https://www.pathwaysdos.nhs.uk/app/api/webservices?wsdl=1.3){:target="_blank"}
 
 
-
 ### [CheckCapacitySummary](/soap_api_ccs.html)
 
+| Type    | Description                                                                                                          |
+|---------|----------------------------------------------------------------------------------------------------------------------|
 | Request | A non-identifiable representation of a 'clinical case' |
-| Returns | A curated, ordered set of service results (valid requests will always return some results - see "Catch All Results") |
+| Response | A curated, ordered set of service results (valid requests will always return some results - see "Catch All Results") |
 
 
 ### [ServiceDetailsById](/soap_api_sdbid.html)
-
+ 
+| Type    | Description                                                                                                          |
+|---------|----------------------------------------------------------------------------------------------------------------------|
 | Request | A service identifier - either ServiceId or OdsCode |
-| Returns | A list of technical endpoint details (0 or more) |
+| Response | A list of technical endpoint details (0 or more) |
 
 
 ### GetHospitalScores
 
+| Type    | Description                                                                                                          |
+|---------|----------------------------------------------------------------------------------------------------------------------|
 | Request | Username and password - no search parameters required |
-| Returns | ODS code and Overall Pressure Score (only services profiled with a Beds or ED capacity grid) |
+| Response | ODS code and Overall Pressure Score (only services profiled with a Beds or ED capacity grid) |
