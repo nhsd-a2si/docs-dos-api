@@ -1,3 +1,14 @@
+---
+title: Check Capacity Summary Search Logic
+keywords: develop, validation, rules
+tags: [testing,integration,deployment, logic, rules, validate]
+sidebar: overview_sidebar
+permalink: 
+summary: Search logic for the CheckCapacitySummary SOAP method
+published: yes
+---
+
+
 ## Overview
 
 The search is split into several sections, each of which filter out more services until a set of valid results remain. These results are then grouped and ordered according to a set of rules.
