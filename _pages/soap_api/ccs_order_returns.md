@@ -1,3 +1,14 @@
+---
+title: Display Order of Returned Services
+keywords: develop
+tags: [testing,integration,deployment, display, search, result]
+sidebar: overview_sidebar
+permalink: 
+summary: Details about the CheckCapacitySummary order of included services
+published: true
+---
+
+
 ## Calculate Display Order of Returned Services
 
 If fewer than two services remain after the filtering processes, the Catch-all search is invoked. This is described separately.
