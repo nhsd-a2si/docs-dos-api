@@ -126,11 +126,11 @@ The patient’s age can be entered either as one of the recognised age groups or
 *	Age Format, if used, must contain a valid value. If the value is invalid an error will be returned
 Where the format used is Age Group, the following rules apply to the Age element:
 *	If the Age format is invalid, an error is returned. Valid age groups are:
-**	4: Neonate and Infant - 0 years
-**	3: Toddler - 1-4 years
-**	2: Child - 5-15 years
-**	1: Adult - 16+ (includes ages 16-129)
-**	8: Older People - 65+ (includes ages 65-129)
+    *	4: Neonate and Infant - 0 years
+    *	3: Toddler - 1-4 years
+    *	2: Child - 5-15 years
+    * 1: Adult - 16+ (includes ages 16-129)
+    *	8: Older People - 65+ (includes ages 65-129)
 *	If an age group is used in the Age element that is valid format but doesn't exist (e.g. 5), no services will match and the catch-all will be returned
 *	If the Age element is null or missing, no services will match and the catch-all will be returned
 Where the format used is Years, the following rules apply to the Age element:
@@ -142,14 +142,23 @@ Where the format used is Years, the following rules apply to the Age element:
 ### Match Session Times
 The current time (time of search) is used to calculate which services will be open within the required timeframe and discards all services which will not. This is a complex calculation which ensures that the service is not closing within half an hour of the current time to allow the patient time to attend and, for longer disposition timeframes, ensures that the service is open before the last hour of the disposition. The system calculates a ‘session time’ within these rules and a service will only return if it is open at some point within the calculated session time.
 
-This is described in more detail in the Profiling Tips section below, however the rules are as follows:
-*	The disposition timeframe is taken from the disposition group and not the individual disposition. This timeframe is entered in minutes
+The rules are as follows:
+*	The disposition timeframe is taken from the disposition group and is in minutes
+*	The session end time is dependent on the disposition: 
+    *	0 mins (immediately) = Time of search + 60 mins
+    *	>0 & <= 30 mins = Time of search + 30 mins
+    *	31 – 60 mins = Time of search + Disposition
+    *	> 60 mins = Time of search + Disposition – 60 mins
+    *	NULL = treated as 0 and therefore Time of search + 60 mins
 *	The service must be open within the calculated session time (i.e. between the start and end time parameters that have been calculated according to the rules) – there is no minimum timeframe. E.g. if the calculated session time window starts at 9:30 and the service closes at 9:30, this is a valid service
 *	The service must not be closing within 30 minutes of the search time
-*	The session end time is dependent on the disposition: 
-**	0 mins (immediately) = Time of search + 60 mins
-**	>0 & <= 30 mins = Time of search + 30 mins
-**	31 – 60 mins = Time of search + Disposition
-**	> 60 mins = Time of search + Disposition – 60 mins
-**	NULL = treated as 0 and therefore Time of search + 60 mins
+
+### Check for Services that Should Only Return If Open
+Some services will be marked to only return from a search if they are either open at the time of the search or are due to open within a specified timeframe (either 15 or 30 minutes) of the search time.
+
+### Check for Limited Services
+Services may be limited to one or more CCGs. These services will only return if they are limited to the CCG of the search location.
+
+## Gap Results
+If any services that go through the second search pipeline fail to match on only one criterion, they are recorded as having 'gapped' and can be analysed by commissioners.
 
