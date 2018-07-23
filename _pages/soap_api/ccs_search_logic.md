@@ -59,3 +59,97 @@ The search box is calculated using the following rules:
 * The distance between the centre of the search box and the centre of each side is  equal to the search distance provided, or the default if none is provided
 * The straight line value between the postcode provided and the service is converted in to miles and returned as the distance from patient value
 
+## First Search Pipeline ##
+Once the initial validations and checks are complete, the first search can begin. The aim of this filter is to quickly reduce the number of potential returns. No record is kept of which services are eliminated at this point.
+
+### Check Service Status
+There are multiple statuses for a service in the DoS, however only those which are Active will be returned in a Check Capacity Summary search.
+
+### Check Distance
+Any services whose northings/eastings values do not fall within the search box will be discarded.
+
+### Match Symptom Group (SG)
+Any service that is not profiled with the SG that is passed in will be discarded. The following rules are in place:
+*	The value must be correctly formatted
+There are a couple of points to note:
+*	The SG value is not mandatory in the web service request, so a null or missing value will not error, however this will fail to match any services and will trigger a catch-all search
+*	The SG value is not validated against a list of available values, so if a value that does not exist is used, it will not error, however this will fail to match any services and will trigger a catch-all search
+
+### Match Gender
+Gender is matched using the following rules:
+Default value: I (Indeterminate)
+*	The gender must be a valid value – an invalid value will return an error
+*	If the field is null or missing, the default value will be used
+*	Services with no gender profiled will not be matched and will therefore not return
+
+### Match GP Surgery
+Services can be profiled to show that they are commissioned by a specific GP or group of GPs, and if they are marked as restricted, they will only return if the patient is registered with one of the listed GP practices. This is often referred to a as a ‘service referral’ and is described in more detail in the profiling tips section below.
+The ODS code of the patient’s GP surgery can optionally be included in the request and this is matched using the following rules:
+*	If the service is marked as Restricted, if the ODS code is null or missing, the service will not match and will not return
+*	If the service is marked as Restricted, if the ODS code in the request is not on the service referral list for the service, it will not match and will not return
+*	If the service is marked as Unrestricted, or has no service referrals, it will be treated as a match
+
+## Second Search Pipeline ##
+
+All services which remain as potential candidates for return following the first search pipeline now go through a second filter, to determine a final list of matching services which could be returned. Any services which fail to match on only one of the criteria listed below will be classed as ‘Gap’ services. Gap results are described separately.
+
+### Check Capacity Status
+Capacity Status is a RAG (Red, Amber, Green) rating of how busy the service is. If this is changed to anything other than green, it is automatically reset to green after four hours. In the Check Capacity Summary return, green is returned as High capacity and amber is returned as Low capacity.
+Services are filtered on capacity using the following rule:
+*	Capacity status must be Green or Amber – services with  a Red capacity status are not returned
+
+### Match Symptom Discriminator (SD)
+Symptom Discriminators are stored in the DoS separately but each is linked to one or more Symptom Groups and they can only be added to a service profile as a valid combination. Symptom Groups and Discriminators, and their combinations, are determined by the Pathways system.
+Symptom Discriminators are matched using the following rules:
+*	A null value is not accepted and will return an error
+*	The value must be correctly formatted, and incorrect formatting will return an error
+*	Multiple SDs are accepted but any duplicates which are requested will be removed
+*	SDs which are not a valid combination with the SG provided will be removed
+Services which are not profiled with one or more of the remaining SDs will not be returned.
+
+### Match Disposition (DX)
+Dispositions are also determined by the Pathways system and are stored in the DoS as Dispositions (each of which is given a Dx code) and Disposition Groups. Usually this is a one to one relationship and the group has the same description as the disposition, and it is these which are used in the Check Capacity Search, but when searching through the UI (Clinical Search) it is possible to select a group which is linked to multiple Dispositions and therefore match against multiple dispositions at once.
+A timeframe (in minutes) is stored against each disposition group, and this determines the opening time calculation for the service (described in a later section).
+It is the ID of the Disposition Group which is passed in and matched against the service, using the following rules:
+*	A null value is accepted – if a null value is used this parameter is ignored and matches all services
+*	The value, if used, must be correctly formatted, and incorrect formatting will return an error
+
+### Match Referral Role
+Each user account is assigned one Referral Role (also known as Search Role), which provides a broad indication of the type of user that they are – for example, there are different referral roles for 111 providers, healthcare professionals and apps which provide advice directly to members of the public.
+Services may be profiled with one or more Referral Roles, which indicate which type of user is able to refer to that service.
+If the service is not profiled with a matching Referral Role to that of the authenticated user, or is not profiled with any referral roles, the service will not return.
+
+### Check Age Format and Match on Age
+It should be noted that age profiling of services on the DoS has been changed, so that where services have previously been profiled with one or more age groups, it is now possible to profile services with one or more age ranges, which provides a more flexible method of declaring which ages a service can cater for. The web service has not yet been updated and still searches using age groups, as described here. The DoS converts the age ranges stored against the service profiles into groups, until such a time as the web service is changed.
+The patient’s age can be entered either as one of the recognised age groups or as an actual age in years, and therefore both an Age Format field and an Age field are used in the request. These are matched using the following rules:
+*	If a Null value is entered for the Age Format field, the parameter is ignored and will match all services
+*	Age Format, if used, must contain a valid value. If the value is invalid an error will be returned
+Where the format used is Age Group, the following rules apply to the Age element:
+*	If the Age format is invalid, an error is returned. Valid age groups are:
+**	4: Neonate and Infant - 0 years
+**	3: Toddler - 1-4 years
+**	2: Child - 5-15 years
+**	1: Adult - 16+ (includes ages 16-129)
+**	8: Older People - 65+ (includes ages 65-129)
+*	If an age group is used in the Age element that is valid format but doesn't exist (e.g. 5), no services will match and the catch-all will be returned
+*	If the Age element is null or missing, no services will match and the catch-all will be returned
+Where the format used is Years, the following rules apply to the Age element:
+*	When entering an age the upper limit is 129
+*	If the Age format is invalid or above the upper limit, the Age element is ignored and all services are matched
+*	If the Age element is null or missing, age is ignored and all services are matched
+*	If the Age Format is Years, the age will be converted to an Age Group
+
+### Match Session Times
+The current time (time of search) is used to calculate which services will be open within the required timeframe and discards all services which will not. This is a complex calculation which ensures that the service is not closing within half an hour of the current time to allow the patient time to attend and, for longer disposition timeframes, ensures that the service is open before the last hour of the disposition. The system calculates a ‘session time’ within these rules and a service will only return if it is open at some point within the calculated session time.
+
+This is described in more detail in the Profiling Tips section below, however the rules are as follows:
+*	The disposition timeframe is taken from the disposition group and not the individual disposition. This timeframe is entered in minutes
+*	The service must be open within the calculated session time (i.e. between the start and end time parameters that have been calculated according to the rules) – there is no minimum timeframe. E.g. if the calculated session time window starts at 9:30 and the service closes at 9:30, this is a valid service
+*	The service must not be closing within 30 minutes of the search time
+*	The session end time is dependent on the disposition: 
+**	0 mins (immediately) = Time of search + 60 mins
+**	>0 & <= 30 mins = Time of search + 30 mins
+**	31 – 60 mins = Time of search + Disposition
+**	> 60 mins = Time of search + Disposition – 60 mins
+**	NULL = treated as 0 and therefore Time of search + 60 mins
+
