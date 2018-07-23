@@ -1,3 +1,13 @@
+---
+title: Catch-all Search
+keywords: develop, validation, rules
+tags: [testing,integration,deployment,rules]
+sidebar: overview_sidebar
+permalink: 
+summary: Catch-all rules for the Check Capacity Summary search
+published: true
+---
+
 ## Catch-all Search
 
 The Catch-all search is invoked if, following the filtering processes, there are fewer than two remaining services that can be returned. This is in order to provide the patient with a choice of services. The following rules are applied:
