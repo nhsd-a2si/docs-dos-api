@@ -12,7 +12,7 @@ published: true
 ## Request 
 The following table details the parameters included in a Check Capacity Summary v1.3 request
 
-| *Field Name*    | *Required?*    | *Type*   | *Default Value* | *Description*   |
+| **Field Name**    | **Required?**    | **Type**   | **Default Value** | **Description**   |
 |-----------------|----------------|----------|-----------------|-----------------|
 |serviceVersion	  |  No	           |string	  | 1.3             | the web service version being requested, must be a valid value |
 |username         |	Yes            |string    |	N/A	            | Must be an active DoS account |
@@ -34,7 +34,7 @@ The following table details the parameters included in a Check Capacity Summary 
 ## Response
 The following table details the Check Capacity Summary v1.3 response 
 
-| *Field Name*  | *Type*    | *Description / Corresponding DoS Field Label*  |
+| **Field Name**  | **Type**    | **Description / Corresponding DoS Field Label**  |
 |---------------|-----------|------------------------------------------------|
 |TransactionID  |	string	  | Used in audit logs and assists with support requests |
 |id             |	string	  | The unique ID of the service |
