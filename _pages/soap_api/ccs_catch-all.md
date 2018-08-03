@@ -3,7 +3,7 @@ title: Catch-all Search
 keywords: develop, validation, rules
 tags: [testing,integration,deployment,rules]
 sidebar: overview_sidebar
-permalink: 
+permalink: ccs_catch_all.html
 summary: Catch-all rules for the Check Capacity Summary search
 published: true
 ---
