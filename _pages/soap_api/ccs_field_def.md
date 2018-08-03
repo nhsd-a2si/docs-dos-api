@@ -3,7 +3,7 @@ title: Check Capacity Summary Field Definition v1.3
 keywords: develop
 tags: [testing,integration,deployment]
 sidebar: overview_sidebar
-permalink:
+permalink: ccs_fields.html
 published: true
 ---
 
