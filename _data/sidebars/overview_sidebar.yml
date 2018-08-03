@@ -30,7 +30,7 @@ entries:
       url: /api_testing.html
       output: web
     - subfolders:
-      - title: SOAP API
+      - title: SOAP API Version 1.3
         output: web
         url: /soap_api_overview.html
         subfolderitems:
@@ -40,17 +40,29 @@ entries:
         - title: Authentication
           url: /soap_api_auth.html
           output: web
-        - title: Errors
-          url: /soap_api_errors.html
-          output: web
         - title: CheckCapacitySummary
           url: /soap_api_ccs.html
           output: web
+        - title: Field Definition
+          url: /ccs_fields.html
+          output: web
+        - title: Errors
+          url: /soap_api_errors.html
+          output: web
+        - title: Search Logic
+          url: /ccs_logic.html
+          output: web
+        - title: Catch-all Search
+          url: ccs_catch_all.html
+          output: web
+        - title: Order of Search Returns
+          url: /ccs_order_returns.html
+          output: web
+        - title: WSDL Documentation
+          url: /soap_v1-3/
+          output: web
         - title: ServiceDetailsById
           url: /soap_api_sdbid.html
-          output: web
-        - title: WSDL Documentation (v1.3)
-          url: /soap_v1-3/
           output: web
       - title: REST API
         output: web
