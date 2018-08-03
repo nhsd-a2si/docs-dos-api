@@ -29,8 +29,7 @@ entries:
     - title: Testing
       url: /api_testing.html
       output: web
-    - subfolders:
-      - title: SOAP API Version 1.3
+    - title: SOAP API Version 1.3
         output: web
         url: /soap_api_overview.html
         subfolderitems:
@@ -64,7 +63,7 @@ entries:
         - title: ServiceDetailsById
           url: /soap_api_sdbid.html
           output: web
-      - title: REST API
+    - title: REST API
         output: web
         url: /rest_api_overview.html
         subfolderitems:
