@@ -3,7 +3,7 @@ title: Display Order of Returned Services
 keywords: develop
 tags: [testing,integration,deployment, display, search, result]
 sidebar: overview_sidebar
-permalink: 
+permalink: ccs_order_returns.html
 summary: Details about the CheckCapacitySummary order of included services
 published: true
 ---
