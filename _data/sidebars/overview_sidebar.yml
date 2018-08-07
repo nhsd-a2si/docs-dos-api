@@ -25,11 +25,11 @@ entries:
 
   - title: Develop
     output: web
-    subfolderitems:
+    folderitems:
     - title: Testing
       url: /api_testing.html
       output: web
-    - subfolders:
+      - subfolders:
      - title: SOAP API Version 1.3
         output: web
         url: /soap_api_overview.html
