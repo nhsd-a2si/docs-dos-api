@@ -25,7 +25,7 @@ entries:
 
   - title: Develop
     output: web
-    folderitems:
+    subfolderitems:
     - title: Testing
       url: /api_testing.html
       output: web
