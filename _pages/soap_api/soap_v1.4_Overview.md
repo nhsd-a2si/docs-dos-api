@@ -1,3 +1,14 @@
+---
+title: SOAP API version 1.4- Overview
+keywords: develop
+tags: [testing,integration,deployment]
+sidebar: overview_sidebar
+permalink: soap_v1.4_overview.html
+summary: A summary of the new features in DoS SOAP API version 1.4
+published: true
+---
+
+
 # Overview of Web Service v1.4
 
 This section details the changes that have been introduced in web service v1.4, and therefore how it differs from v1.3. New functionality included in this release has been added to the CheckCapacitySummary endpoint, and the other endpoints – ServiceDetailsbyID and GetHospitalScores – are unchanged.
