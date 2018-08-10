@@ -7,9 +7,7 @@ permalink: ccs_fields_v1.4.html
 published: true
 ---
 
-# Check Capacity Summary Field Definition v1.4
-
-## Request 
+# Request 
 The following table details the parameters included in a Check Capacity Summary v1.4 request
 
 | **Field Name**    | **Required?**    | **Type**   | **Default Value** | **Description**   |
@@ -32,7 +30,7 @@ The following table details the parameters included in a Check Capacity Summary 
 
 
 
-## Response
+# Response
 The following table details the Check Capacity Summary v1.4 response 
 
 | **Field Name**  | **Type**    | **Description / Corresponding DoS Field Label**  |
