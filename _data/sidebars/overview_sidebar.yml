@@ -71,6 +71,9 @@ entries:
         - title: Overview
           url: /soap_v1.4_overview.html
           output: web
+        - title: Field Definition
+          url: /soap_v1.4_overview.html
+          output: web       
       - title: REST API
         output: web
         url: /rest_api_overview.html
