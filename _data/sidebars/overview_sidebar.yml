@@ -72,7 +72,7 @@ entries:
           url: /soap_v1.4_overview.html
           output: web
         - title: Field Definition
-          url: /soap_v1.4_overview.html
+          url: /ccs_fields_v1.4.html
           output: web       
       - title: REST API
         output: web
