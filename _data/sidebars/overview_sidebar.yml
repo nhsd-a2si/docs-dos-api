@@ -64,6 +64,13 @@ entries:
         - title: ServiceDetailsById
           url: /soap_api_sdbid.html
           output: web
+      - title: SOAP API Version 1.4
+        output: web
+        url: /soap_v1.4_overview.html
+        subfolderitems:
+        - title: Overview
+          url: /soap_v1.4_overview.html
+          output: web
       - title: REST API
         output: web
         url: /rest_api_overview.html
