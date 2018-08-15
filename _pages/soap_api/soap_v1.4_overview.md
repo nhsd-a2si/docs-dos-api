@@ -30,7 +30,7 @@ This new field is subject to the following validation:
 * If the search date/time field is null or missing, the current date and time is used in the search
 * If the search date/time field is used and the value is different from the current date/time, for audit logging purposes this is treated as a test case and not a live patient request
 * If the field is populated but has an incorrect format, an error message is returned
-   * The accepted format uses ISO8601 standard. Example: 2018-08-01T09:05:00
+   * The accepted format uses ISO8601 standard. Example: 2018-08-01T09:05:00. searching using different timezones is not currently supported
 * If a date/time more than 12 months in the future (from the current date/time) is used, an error is returned
 * If a date/time more than 60 seconds in the past is used, an error is returned
 
