@@ -87,9 +87,6 @@ entries:
         - title: Errors
           url: /errors.html
           output: web
-        - title: OpenAPI Reference
-          url: /dos_rest_endpoints_reference.html
-          output: web
 
   - title: Assure
     output: web
