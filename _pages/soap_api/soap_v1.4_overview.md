@@ -43,7 +43,9 @@ Where services wish to use this field, it is expected that there will be provisi
 
 ### Current Wait Times
 The CheckCapacitySummary response includes a placeholder array to allow for the inclusion of waiting times in the future. Initially this will always be returned with null values.
-*Note: The format of these fields will change in web service version 1.5, so we do not advise using these fields in this version
+
+_Note:_ The format of these fields will change in web service version 1.5, so we do not advise using these fields in this version
+
 These fields, grouped with the tag ‘waitTimes’, are:
 * currentWaitTime
 * patientsInDepartment
