@@ -87,6 +87,9 @@ entries:
         - title: Errors
           url: /errors.html
           output: web
+        - title: byServiceType
+          url: /byServiceType.html
+          output: web
 
   - title: Assure
     output: web
