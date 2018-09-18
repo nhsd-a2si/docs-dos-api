@@ -90,6 +90,15 @@ entries:
         - title: byServiceType
           url: /byServiceType.html
           output: web
+        - title: byClinicalTerm
+          url: /byClinicalTerm.html
+          output: web
+        - title: byODSCode
+          url: /byODSCode.html
+          output: web
+        - title: byServiceId
+          url: /byServiceId.html
+          output: web
 
   - title: Assure
     output: web
