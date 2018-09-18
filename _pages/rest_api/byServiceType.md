@@ -58,6 +58,9 @@ A list of service types and their IDs is available [here.](https://github.com/nh
 | Postcode             |	Postcode must be in the DoS postcode lookup table |	Bad Request: Invalid post code |
 | Postcode             |	Postcode cannot be Null	 | Bad Request: Postcode must be provided |
 | GP Practice ID       |	Must be a valid service ID |	Bad Request: The supplied service ID of the patient's practice does not exist in the system |
+| Age                  |  Must be a valid Age Group ID | Bad Request: The age group ID must be one of the following: 1, 2, 3, 4, 8 |
+| Gender               |  Must be a valid Gender ID |  Bad Request: The gender must be one of the following: M, F, I (case sensitive) |
+
 
 
 # Search Rules
@@ -68,6 +71,7 @@ A list of service types and their IDs is available [here.](https://github.com/nh
 |                   |	Only Active services are returned |
 | Search Distance   |	Use this value to calculate the search box, with the postcode passed in at the centre - only services within this box are returned. If Null or Zero, default value is used: 37.5 miles |
 | Postcode          |	Postcode is used to calculate the search distance, and the distance (in miles) between the postcode and each service is included in response |
+| Postcode          | If no postcode is passed in, an error will not be returned but no services will match |
 | Gender	          | Only services matching the gender code provided are returned in the response. Where null, Gender is ignored |
 | GP Practice ID	  | Services which are restricted to patients of a specified GP practice will only return if the GP Practice ID passed in is on the Service Referrals list of the service |
 | Number per type	  | Where there are more results per Service Type than the Number per type value, only the closest services (by distance) up to the total number requested are returned. If passed in Null or zero, the default value is used: 5 |
