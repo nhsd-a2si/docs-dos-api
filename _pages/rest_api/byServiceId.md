@@ -7,7 +7,7 @@ permalink: byServiceId.html
 summary: Description of byServiceId endpoint
 ---
 
-# Search by Service ID
+# Description
 This method retrieves services which match the service ID entered, and returns a larger dataset than the clinical and service type search methods, allowing users to access additional information about the service. This is a unique field and each request will therefore return a maximum of one result.
 
 # Request
