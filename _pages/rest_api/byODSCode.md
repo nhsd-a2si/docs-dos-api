@@ -7,7 +7,7 @@ permalink: byODSCode.html
 summary: Description of byODSCode endpoint
 ---
 
-# Search by ODS Code
+# Description
 This method retrieves services which match the ODS code entered, and returns a larger dataset than the clinical and service type search methods, allowing users to access additional information about the service.
 
 It should be noted that the ODS code should be a unique value and therefore should only return one service, however there are a small number of instances where services that have been duplicated may have the same ODS code. In these circumstances, all services matching the ODS code provided will be returned.
