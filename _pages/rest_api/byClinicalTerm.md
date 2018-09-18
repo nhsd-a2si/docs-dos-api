@@ -1,4 +1,14 @@
-# Search by Symptom (Clinical Term)
+---
+title: Search by Clinical Term
+keywords: develop
+tags: [develop]
+sidebar: overview_sidebar
+permalink: byClinicalTerm.html
+summary: Description of byClinicalTerm endpoint
+---
+
+# Search by Clinical Term
+AKA Symptom Search
 
 This search method allows users to search the DoS based on symptoms, location and optional patient details, and returns a set of data about matching services. It returns up to the number of results specified per service type and ordered by distance, closest first.
 
