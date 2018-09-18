@@ -47,7 +47,7 @@ entries:
           url: /ccs_fields.html
           output: web
         - title: Errors
-          url: /soap_errors.html
+          url: /soap_api_errors.html
           output: web
         - title: Search Logic
           url: /ccs_logic.html
