@@ -1,3 +1,12 @@
+---
+title: Search by Service Type
+keywords: develop
+tags: [develop]
+sidebar: overview_sidebar
+permalink: byServiceType.html
+summary: Description of byServiceType endpoint
+---
+
 # Search by Service Type
 
 This search method allows users to search the DoS based on service type ID, location and optional patient details, and returns a set of details about matching services. It returns up to the number of results specified per service type and ordered by distance, closest first.
