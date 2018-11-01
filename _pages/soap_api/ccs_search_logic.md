@@ -32,14 +32,37 @@ Failure to comply with any or all of these rules returns an error.
 * If the value passed in is not a valid, supported API version, an error will be returned
 
 ### Validate Search Distance
-This is an optional field which, if populated, will overide the default distance.
-This field is validated against the following rules:
-Current default value: 60
-* This is an optional field and if it is null or missing, the default value is used
-* Distances are in kilometres
-* Must be a number between 1 and 99
+The DoS database holds a table of postcodes, each stored against a search distance, in kilometres. These may be full or partial postcodes, using either the postcode sector or district. This provides the flexibility to specify search distances against small or larger areas.
+This overrides the ability that some provider systems have to pass a distance in to the request. Passing in a distance is still permitted, but it will be used only if there is no stored value in the database for that postcode.
 
-Validate Postcode
+Current default value: 60 kilometres
+
+This distance field in the request is validated against the following rules:
+* This is an optional field
+* Distances are in kilometres
+* Must be a number between 1 and 99 (any other value will return an error only where it has not been overridden by a value in the database)
+
+The search distance to be used is calculated in the following order:
+1. The distance listed in the table where there is an exact match to the full Postcode
+
+Where there is no match, then;
+
+2. The distance listed in the table where there is an exact match to the postcode Sector
+
+Where there is no match, then;
+
+3. The distance listed in the table where there is an exact match to the postcode District
+
+Where there is no match, then;
+
+4. The search distance value entered in search request
+
+Where a distance is not passed in, then;
+
+5. Use the National default value
+
+
+### Validate Postcode
 The postcode is used to ensure that services returned are within an appropriate travelling distance for the patient and to calculate the distance from patient values which are included in the return (displayed in miles). Therefore this is a mandatory value and must be a valid postcode.
 Postcodes are validated using the following rules:
 * A null value or missing element is not accepted
@@ -94,7 +117,8 @@ The ODS code of the patient’s GP surgery can optionally be included in the req
 All services which remain as potential candidates for return following the first search pipeline now go through a second filter, to determine a final list of matching services which could be returned. Any services which fail to match on only one of the criteria listed below will be classed as ‘Gap’ services. Gap results are described separately.
 
 ### Check Capacity Status
-Capacity Status is a RAG (Red, Amber, Green) rating of how busy the service is. If this is changed to anything other than green, it is automatically reset to green after four hours. In the Check Capacity Summary return, green is returned as High capacity and amber is returned as Low capacity.
+Capacity Status is a RAG (Red, Amber, Green) rating of how busy the service is. If this is changed to anything other than green, it is automatically reset to green after a length of time specified by the logged-in user when the status is changed. The automatic reset time is any period between fifteen minutes and twenty-four hours, in fifteen minute increments. The service may be manually reset to green at any time.
+
 Services are filtered on capacity using the following rule:
 *	Capacity status must be Green or Amber – services with  a Red capacity status are not returned
 
