@@ -61,5 +61,5 @@ The following table details the Check Capacity Summary v1.4 response
 |waitTimes    |    |       |
 |currentWaitTime, patientsInDepartment, patientsBeingSeen |  |To allow current wait time data to be included in the response. In all cases currently, these fields will not be populated |
 | rotaSessions |  |       |
-|   startDayOfWeek, startTime - hours, minutes - endTime - hours, minutes |  | Array	Cycles through each day of the week and provides all opening and closing times for each day, using 24 hour clock. Includes a day named Bankholiday, which gives standard public holiday opening times for the service |
+|   startDayOfWeek, startTime - hours, minutes - endTime - hours, minutes | Array | Cycles through each day of the week and provides all opening and closing times for each day, using 24 hour clock. Includes a day named Bankholiday, which gives standard public holiday opening times for the service |
 |  openTimeSpecified |	Array |	Provides a date and time for each specified session, which are exceptions to the dates and times provided in the standard hours listings, in the format: DD-MM-YYYY-hh:mm-hh:mm. If the service is closed on a specified day, the time will display as 00:00-00:00 |
