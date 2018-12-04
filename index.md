@@ -1,5 +1,5 @@
 ---
-title: Introduction to Directory of Services API suite
+title: Directory of Services API suite
 keywords: homepage
 tags: [getting_started]
 sidebar: overview_sidebar
