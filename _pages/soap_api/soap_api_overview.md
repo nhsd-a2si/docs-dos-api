@@ -18,7 +18,7 @@ The SOAP API is the primary API used by NHS 111 services. It provides consumers 
 
 The SOAP API supports the following high-level use cases:
 
-* Find an appropriate list of services for a specific clinical need
+* Get a curated list of appropriate services for a specific clinical need
 
 * Get technical endpoint information for a given service
 
@@ -30,9 +30,10 @@ To allow for the release of new features there may be more than one supported ve
 
 **Current Supported Versions**
 
-v1.3
-
-v1.4 - available from September 2018
+| Version | Status    | Planned Deprecation Date |
+| v1.3    | Available | 1-Sep-2019               |
+| v1.4    | Available | 1-Sep-2019               |
+| v1.5    | In Development |                     |
 
 **Default Version**
 
@@ -57,12 +58,13 @@ The path to the SOAP API is: **https://???.pathwaysdos.nhs.uk/app/api/webservice
 
 You can grab the latest version (v1.3) of the WSDL from here: [https://www.pathwaysdos.nhs.uk/app/api/webservices?wsdl=1.3](https://www.pathwaysdos.nhs.uk/app/api/webservices?wsdl=1.3){:target="_blank"}
 
+All SOAP methods require your **username/password** and a **web service version**.
 
 ### [CheckCapacitySummary](/soap_api_ccs.html)
 
 | Type    | Description                                                                                                          |
 |---------|----------------------------------------------------------------------------------------------------------------------|
-| Request | A non-identifiable representation of a 'clinical case' |
+| Request | A representation of a 'clinical case' |
 | Response | A curated, ordered set of service results (valid requests will always return some results - see "Catch All Results") |
 
 
@@ -78,8 +80,8 @@ You can grab the latest version (v1.3) of the WSDL from here: [https://www.pathw
 
 | Type    | Description                                                                                                          |
 |---------|----------------------------------------------------------------------------------------------------------------------|
-| Request | Username and password - no search parameters required |
-| Response | ODS code and Overall Pressure Score (only services profiled with a Beds or ED capacity grid) |
+| Request | None |
+| Response | A list of ODS codes and their Overall Pressure Score (only services profiled with a Beds or ED capacity grid) |
 
 ## Sample Requests
 
