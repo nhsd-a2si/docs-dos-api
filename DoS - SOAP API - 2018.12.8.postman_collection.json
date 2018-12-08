@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "f6203921-09d2-45ea-be1e-e3cc52166f28",
+		"name": "DoS - SOAP API",
+		"description": "This is a collection of requests for use with the Directory of Services SOAP API.\n\nYou will need to add values for the following variables:\n\n**username** - Your DoS account username\n**password** - Your DoS account password\n**base_url** - The hostname of the DoS instance you are connecting to e.g. uat3.pathwaysdos.nhs.uk",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetHospitalScores v1.3",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soap:Envelope xmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:web=\"https://nww.pathwaysdos.nhs.uk/app/api/webservices\">\n   <soap:Header>\n      <web:serviceVersion>1.3</web:serviceVersion>\n   </soap:Header>\n   <soap:Body>\n      <web:GetHospitalScores>\n         <!--Optional:-->\n         <web:userInfo>\n<web:username>{{username}}</web:username>\n<web:password>{{password}}</web:password>\n         </web:userInfo>\n      </web:GetHospitalScores>\n   </soap:Body>\n</soap:Envelope>"
+				},
+				"url": {
+					"raw": "https://{{hostname}}/app/api/webservices",
+					"protocol": "https",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"app",
+						"api",
+						"webservices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ServiceDetailsById v1.3",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soap:Envelope xmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:web=\"https://nww.pathwaysdos.nhs.uk/app/api/webservices\">\n   <soap:Header>\n      <web:serviceVersion>1.3</web:serviceVersion>\n   </soap:Header>\n   <soap:Body>\n      <web:ServiceDetailsById>\n         <web:userInfo>\n            <web:username>{{username}}</web:username>\n            <web:password>{{password}}</web:password>\n         </web:userInfo>\n         <web:serviceId>1317643273</web:serviceId>\n      </web:ServiceDetailsById>\n   </soap:Body>\n</soap:Envelope>"
+				},
+				"url": {
+					"raw": "https://{{hostname}}/app/api/webservices",
+					"protocol": "https",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"app",
+						"api",
+						"webservices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CheckCapacitySummary v1.3",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soap:Envelope xmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:web=\"https://nww.pathwaysdos.nhs.uk/app/api/webservices\">\n   <soap:Header>\n      <web:serviceVersion>1.3</web:serviceVersion>\n   </soap:Header>\n   <soap:Body>\n      <web:CheckCapacitySummary>\n         <web:userInfo>\n<web:username>{{username}}</web:username>\n<web:password>{{password}}</web:password>\n         </web:userInfo>\n         <web:c>\n            <!--Optional:-->\n            <web:caseRef>TEST</web:caseRef>\n            <!--Optional:-->\n            <web:caseId>TEST</web:caseId>\n            <web:postcode>SE165FX</web:postcode>\n            <!--Optional:-->\n            <web:surgery>UNK</web:surgery>\n            <web:age>30</web:age>\n            <web:ageFormat>Years</web:ageFormat>\n            <web:disposition>1012</web:disposition>\n            <web:symptomGroup>1013</web:symptomGroup>\n            <web:symptomDiscriminatorList>\n               <!--Zero or more repetitions:-->\n               <web:int>4156</web:int>\n            </web:symptomDiscriminatorList>\n            <!--Optional:-->\n            <web:searchDistance>60</web:searchDistance>\n            <web:gender>M</web:gender>\n         </web:c>\n      </web:CheckCapacitySummary>\n   </soap:Body>\n</soap:Envelope>"
+				},
+				"url": {
+					"raw": "https://{{hostname}}/app/api/webservices",
+					"protocol": "https",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"app",
+						"api",
+						"webservices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CheckCapacitySummary v1.4",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soap:Envelope xmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:web=\"https://nww.pathwaysdos.nhs.uk/app/api/webservices\">\n   <soap:Header>\n      <web:serviceVersion>1.4</web:serviceVersion>\n   </soap:Header>\n   <soap:Body>\n      <web:CheckCapacitySummary>\n         <web:userInfo>\n<web:username>{{username}}</web:username>\n<web:password>{{password}}</web:password>\n         </web:userInfo>\n         <web:c>\n            <!--Optional:-->\n            <web:caseRef>TEST</web:caseRef>\n            <!--Optional:-->\n            <web:caseId>TEST</web:caseId>\n            <web:postcode>SE165FX</web:postcode>\n            <!--Optional:-->\n            <web:surgery>UNK</web:surgery>\n            <web:age>30</web:age>\n            <web:ageFormat>Years</web:ageFormat>\n            <web:disposition>1012</web:disposition>\n            <web:symptomGroup>1013</web:symptomGroup>\n            <web:symptomDiscriminatorList>\n               <!--Zero or more repetitions:-->\n               <web:int>4156</web:int>\n            </web:symptomDiscriminatorList>\n            <!--Optional:-->\n            <web:searchDistance>60</web:searchDistance>\n            <web:gender>M</web:gender>\n         </web:c>\n      </web:CheckCapacitySummary>\n   </soap:Body>\n</soap:Envelope>"
+				},
+				"url": {
+					"raw": "https://{{hostname}}/app/api/webservices",
+					"protocol": "https",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"app",
+						"api",
+						"webservices"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "e99b69c5-3c4f-434b-ab3b-cdcafac915dd",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "b5cbf5db-8923-4c32-9408-dbbd683e0008",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
