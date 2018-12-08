@@ -80,3 +80,7 @@ You can grab the latest version (v1.3) of the WSDL from here: [https://www.pathw
 |---------|----------------------------------------------------------------------------------------------------------------------|
 | Request | Username and password - no search parameters required |
 | Response | ODS code and Overall Pressure Score (only services profiled with a Beds or ED capacity grid) |
+
+## Sample Requests
+
+You can download a Postman collection with example SOAP requests from here: [Sample Postman Collection](downloads/DoS_SOAP_2018.12.8.postman_collection.json)
