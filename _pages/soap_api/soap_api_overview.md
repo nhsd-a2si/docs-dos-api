@@ -38,6 +38,12 @@ v1.4
 
 v1.3
 
+**Future Version**
+
+V1.5 is currently under development. The WSDL and the API will be accessible through our UAT site from early 2019 for development purposes. Whilst the WSDL does reflect the intended changes, it is not finalised and may be subject to further changes. The API is available but all functionality may not be available and/or tested.
+
+Attempting to access the WSDL on any site other than UAT may return an incorrect version.
+
 ## WSDL Documentation ##
 
 You can view some WSDL-generated documentation for the SOAP API here: [Web Service v1.3 WSDL Documentation](/soap_v1-3/){:target="_blank"}
