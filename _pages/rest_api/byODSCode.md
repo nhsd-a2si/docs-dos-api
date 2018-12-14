@@ -139,7 +139,3 @@ The default capacity for services is Green (High) but this may be changed to Amb
 
 Where a service capacity has not been updated for more than 24 hours, this is not returned.
 
-
-## Distance from patient
-
-This is a straight-line distance between the search postcode and that of the service, in miles.
