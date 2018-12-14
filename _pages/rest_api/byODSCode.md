@@ -100,3 +100,46 @@ Where matching services are returned, the following data items should be include
   * ID
   * Name
 * Endpoints
+
+
+## Note about repsone fields
+
+## Opening times
+
+You may receive multiple types of opening time, and these should be treated in a priority order
+
+### Specified Opening Times
+
+These allow services to register exceptions to their usual hours and should override any other sessions that are returned, including the Open All Hours flag.
+
+### Open All Hours
+
+If the flag is set to Open All Hours = True and there are no specified times for the given date, then the service should be treated as open 24 hours a day, 7 days a week. There should not be any standard opening times for these services but if there are, they should be ignored.
+
+### Public Holidays
+
+Services can be profiled with a set of times or can be set to closed for all public holidays (exceptions are recorded as a specified time). If the given day is a public holiday, then this should override the standard opening times for that day.
+
+### Standard Opening Times
+
+These are the days and times that the service is open when none of the above apply. A service may have multiple session times for any given day, and these cannot overlap. 
+
+Session times cannot extend beyond midnight for a given day, so a service which is open over night will display as open until 23:59 on one day and will re-open at 00:00 the following day.
+
+## Referral Information
+
+Additional information about the service is provided in two separate fields. the instructions labelled 'callHandler' are intended to provide information about the service to members of the public. The field labelled 'other' is intended for use by clinicians and care should be taken when displaying this, as it may contain non-public information such as contact methods.
+
+## Telephone Numbers
+
+Both public and non-public telephone numbers are included in the response. The non-public telephone numbers must not be displayed where the person using the application is not a clinician.
+## Capacity Status
+
+The default capacity for services is Green (High) but this may be changed to Amber (Low) or Red (None) for a set period of time, up to 24 hours. Services which have a Red status will return but care should be taken when deciding whether or not to display these, as they have reported that they have little or no capacity to accept new patients, or may be temporarily closed. 
+
+Where a service capacity has not been updated for more than 24 hours, this is not returned.
+
+
+## Distance from patient
+
+This is a straight-line distance between the search postcode and that of the service, in miles.
