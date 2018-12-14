@@ -4,7 +4,7 @@ keywords: develop
 tags: [testing,integration,deployment, security]
 sidebar: overview_sidebar
 permalink: soap_api_1_5_auth.html
-published: true
+published: false
 ---
 
 ## Authentication
