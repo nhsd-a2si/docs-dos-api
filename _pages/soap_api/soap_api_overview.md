@@ -32,7 +32,7 @@ To allow for the release of new features there may be more than one supported ve
 
 v1.3
 
-v1.4 - available from September 2018
+v1.4
 
 **Default Version**
 
