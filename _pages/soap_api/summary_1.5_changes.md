@@ -78,14 +78,14 @@ These fields, grouped with the tag ‘attributes’, are:
 
 The CheckCapacitySummary response includes the service endpoints for each service that is returned. This data is currently only available via the ServiceDetailsById web service endpoint, but will now be included, in a slightly different format, in CheckCapacitySummary responses. 
 
-The fields, grouped with the tag ‘serviceEndpoints, are:
-* endpointOrder
+The fields, grouped with the tag ‘serviceEndPoints', are:
+* order
 * transport
 * format
 * interaction
 * businessScenario
 * address
-* isCompressionEnabled
+* compression
 * comment
 
 It should be noted that additional transport methods may soon be added to the endpoints functionality in the DoS, and these will be included in this version of the web service as they are developed.
@@ -113,13 +113,13 @@ The fields, grouped with the tag ‘serviceAgeRange’, are:
 This endpoint continues to return the same data as previously – the service endpoint data for a given Service ID – it will be formatted differently.
 
 The fields, grouped with the tag ‘contactDetails', are:
-* endpointOrder
+* order
 * transport
 * format
 * interaction
 * businessScenario
 * address
-* isCompressionEnabled
+* compression
 * comment
 
 It should be noted that additional transport methods may soon be added to the endpoints functionality in the DoS, and these will be included in this version of the web service as they are developed.
