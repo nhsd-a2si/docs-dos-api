@@ -73,7 +73,41 @@ entries:
           output: web
         - title: Field Definition
           url: /ccs_fields_v1.4.html
-          output: web       
+          output: web   
+        - title: SOAP API Version 1.5
+        output: web
+        url: /soap_v1.5_overview.html
+        subfolderitems:
+        - title: Overview
+          url: /soap_v1.5_overview.html
+          output: web
+        - title: Summary of Changes
+          url: /summary_1.5_changes.html
+          output: web
+        - title: Authentication
+          url: /soap_auth_1_5.html
+          output: web
+        - title: CheckCapacitySummary (CCS) Overview
+          url: /soap_api_ccs_v1_5.html
+          output: web
+        - title: CCS Field Definition
+          url: /ccs_field_def_v1_5.html
+          output: web
+        - title: Web Service Errors
+          url: /soap_api_errors_v1_5.html
+          output: web
+        - title: CCS Search Logic
+          url: /ccs_search_logic_v1_5.html
+          output: web
+        - title: CCS Catch-all Search
+          url: ccs_catch-all_v1_5.html
+          output: web
+        - title: CCS Order of Search Returns
+          url: /ccs_order_returns_v1_5.html
+          output: web
+        - title: ServiceDetailsById
+          url: /soap_api_sdbid_v1_5.html
+          output: web
       - title: REST API
         output: web
         url: /rest_api_overview.html
