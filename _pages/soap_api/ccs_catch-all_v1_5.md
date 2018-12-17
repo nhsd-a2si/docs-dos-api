@@ -5,7 +5,7 @@ tags: [testing,integration,deployment,rules]
 sidebar: overview_sidebar
 permalink: ccs_catch_all.html
 summary: Catch-all rules for the Check Capacity Summary search
-published: false
+published: true
 ---
 
 ## Catch-all Search

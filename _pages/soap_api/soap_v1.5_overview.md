@@ -5,7 +5,7 @@ tags: [testing,integration,deployment]
 sidebar: overview_sidebar
 permalink: soap_api_overview_1_5.html
 summary: An overview of the DoS SOAP API version 1.5
-published: false
+published: true
 ---
 
 ## The SOAP API ##

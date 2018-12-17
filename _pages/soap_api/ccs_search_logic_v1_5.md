@@ -5,7 +5,7 @@ tags: [testing,integration,deployment, logic, rules, validate]
 sidebar: overview_sidebar
 permalink: ccs_logic_1_5.html
 summary: Search logic for the CheckCapacitySummary SOAP method
-published: false
+published: true
 ---
 
 

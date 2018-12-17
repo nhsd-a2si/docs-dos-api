@@ -5,7 +5,7 @@ tags: [testing,integration,deployment, display, search, result]
 sidebar: overview_sidebar
 permalink: ccs_order_returns.html
 summary: Details about the CheckCapacitySummary order of included services
-published: false
+published: true
 ---
 
 

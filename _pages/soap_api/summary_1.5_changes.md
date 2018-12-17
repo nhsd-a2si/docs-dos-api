@@ -5,7 +5,7 @@ tags: [testing,integration,deployment]
 sidebar: overview_sidebar
 permalink: soap_v1.5_overview.html
 summary: A summary of the new features in DoS SOAP API version 1.5
-published: false
+published: true
 ---
 
 # Summary of Web Service v1.5 Changes

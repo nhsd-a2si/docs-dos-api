@@ -5,7 +5,7 @@ tags: [testing,integration,deployment]
 sidebar: overview_sidebar
 permalink: soap_api_errors_1_5.html
 summary: A list of potential error codes you could receive from the SOAP API
-published: false
+published: true
 ---
 
 ## Error Codes
