@@ -102,7 +102,7 @@ The sources are:
 * National
 
 ### Service Age Ranges
-For each service that is returned in the CheckCapacitySummary response, the age range which matches the request for each returned service is included.
+For each service that is returned in the CheckCapacitySummary response, the age ranges profiled for each returned service are included.
 
 The fields, grouped with the tag ‘serviceAgeRange’, are:
 * Age From
