@@ -3,7 +3,7 @@ title: SOAP API version 1.5 – Summary of Changes
 keywords: develop
 tags: [testing,integration,deployment]
 sidebar: overview_sidebar
-permalink: soap_v1.5_overview.html
+permalink: soap_v1.5_changesummary.html
 summary: A summary of the new features in DoS SOAP API version 1.5
 published: true
 ---
