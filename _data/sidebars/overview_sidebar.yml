@@ -78,37 +78,37 @@ entries:
       - subfolders:
         - title: SOAP API Version 1.5
         output: web
-        url: /soap_v1.5_overview.html
+        url: /soap_api_overview_1_5.html
         subfolderitems:
         - title: Overview
-          url: /soap_v1.5_overview.html
+          url: /soap_api_overview_1_5.html
           output: web
         - title: Summary of Changes
-          url: /summary_1.5_changes.html
+          url: /soap_v1.5_changesummary.html
           output: web
         - title: Authentication
-          url: /soap_auth_1_5.html
+          url: /soap_api_1_5_auth.html
           output: web
         - title: CheckCapacitySummary (CCS) Overview
-          url: /soap_api_ccs_v1_5.html
+          url: /soap_api_1.5_ccs.htm
           output: web
         - title: CCS Field Definition
-          url: /ccs_field_def_v1_5.html
+          url: /ccs_fields_v1.5.html
           output: web
         - title: Web Service Errors
-          url: /soap_api_errors_v1_5.html
+          url: /soap_api_errors_1_5.html
           output: web
         - title: CCS Search Logic
-          url: /ccs_search_logic_v1_5.html
+          url: /ccs_logic_1_5.html
           output: web
         - title: CCS Catch-all Search
-          url: ccs_catch-all_v1_5.html
+          url: /ccs_catch_all_v1_5.html
           output: web
         - title: CCS Order of Search Returns
           url: /ccs_order_returns_v1_5.html
           output: web
         - title: ServiceDetailsById
-          url: /soap_api_sdbid_v1_5.html
+          url: /soap_api_sdbid_1_5.html
           output: web
       - title: REST API
         output: web
