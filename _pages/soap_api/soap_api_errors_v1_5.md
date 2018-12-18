@@ -43,11 +43,11 @@ If your SOAP request is invalid in some way, or there is an error with processin
 | 105 | Parameter Validation: Search distance must be greater than 0km and less than maximum system distance. | The maximum is a configuration parameter set in DoS – currently 99  |
 | 106 | Parameter Validation: Invalid gender supplied - supported values: M, F, I |   |
 | 106 | Parameter Validation: Invalid age format supplied - supported values Years, Months, Days, AgeGroup |   | To be re-numbered |
-| xxx | Parameter Validation: Invalid age value supplied. Supported values where Days format is used are numbers between 0-31 | | In development |
-| xxx | Parameter Validation: Invalid age value supplied. Supported values where Months format is used are whole numbers between 1-23 | | In development |
-| xxx | Parameter Validation: Invalid age value supplied. Supported values where Years format is used are whole numbers between 2-129 | | In development |
-| xxx | Parameter Validation: Invalid age supplied - mandatory field, only whole numbers allowed | | In development |
-| xxx | Parameter Validation: Invalid age value supplied. Supported values where AgeGroup is used are: 1, 2, 3, 4 | | In development |
+| 115 | Parameter Validation: Invalid age value supplied. Supported values where Days format is used are numbers between 0-31 | | In development |
+| x116 | Parameter Validation: Invalid age value supplied. Supported values where Months format is used are whole numbers between 1-23 | | In development |
+| 117 | Parameter Validation: Invalid age value supplied. Supported values where Years format is used are whole numbers between 2-129 | | In development |
+| 114 | Parameter Validation: Invalid age supplied - mandatory field, only whole numbers allowed | | In development |
+| 118 | Parameter Validation: Invalid age value supplied. Supported values where AgeGroup is used are: 1, 2, 3, 4 | | In development |
 | 107 | WSDL Validation: Unsupported Webservice version |   |
 | 108 | Malformed XML: The soap message is not valid xml. |   |
 | 108 | Malformed XML: Unable to identify the SOAP version | | To be renumbered |
@@ -55,6 +55,7 @@ If your SOAP request is invalid in some way, or there is an error with processin
 | 108 | Parameter Validation: Search date and time is invalid | Where a search date/time is passed in, this must be in a valid format | To be re-numbered |
 | 109 | Parameter Validation: searchDateTime ([value]) more than 12 months in future | | To be re-numbered |
 | 110 | Parameter Validation: searchDateTime ([value]) more than 1 minute in the past | |  |
+| 113 | Parameter Validation: where the distance override value is true, a distance value must be provided | | |
 | 300 | Unable to login to DoS web services | Generic error (usually a system level issue) |
 | 302 | Authentication failed: Please check user credentials (username/password) or check whether the user account is locked (use password reset to unlock) |  | To be re-numbered |
 | 302 | Authentication Failed: Please check that the user has the correct privileges to run this service | Usually because the user does not have the correct permission on their account | 
