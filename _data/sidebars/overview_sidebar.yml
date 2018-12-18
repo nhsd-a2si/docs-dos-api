@@ -64,6 +64,7 @@ entries:
         - title: ServiceDetailsById
           url: /soap_api_sdbid.html
           output: web
+    - subfolders:
       - title: SOAP API Version 1.4
         output: web
         url: /soap_v1.4_overview.html
@@ -74,6 +75,7 @@ entries:
         - title: Field Definition
           url: /ccs_fields_v1.4.html
           output: web   
+      - subfolders:
         - title: SOAP API Version 1.5
         output: web
         url: /soap_v1.5_overview.html
