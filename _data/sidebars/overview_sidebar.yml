@@ -75,8 +75,8 @@ entries:
         - title: Field Definition
           url: /ccs_fields_v1.4.html
           output: web   
-      - subfolders:
-        - title: SOAP API Version 1.5
+    - subfolders:
+      - title: SOAP API Version 1.5
         output: web
         url: /soap_api_overview_1_5.html
         subfolderitems:
@@ -90,7 +90,7 @@ entries:
           url: /soap_api_1_5_auth.html
           output: web
         - title: CheckCapacitySummary (CCS) Overview
-          url: /soap_api_1.5_ccs.htm
+          url: /soap_api_1.5_ccs.html
           output: web
         - title: CCS Field Definition
           url: /ccs_fields_v1.5.html
