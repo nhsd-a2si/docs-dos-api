@@ -1,10 +1,10 @@
 ---
-title: SOAP API - Overview
+title: SOAP API Version 1.5 - Overview
 keywords: develop
 tags: [testing,integration,deployment]
 sidebar: overview_sidebar
-permalink: soap_api_overview.html
-summary: An overview of the DoS SOAP API
+permalink: soap_api_overview_1_5.html
+summary: An overview of the DoS SOAP API version 1.5
 published: true
 ---
 
@@ -44,9 +44,10 @@ V1.5 is currently under development. The WSDL and the API will be accessible thr
 
 Attempting to access the WSDL on any site other than UAT may return an incorrect version.
 
+
 ## WSDL Documentation ##
 
-You can view some WSDL-generated documentation for the SOAP API here: [Web Service v1.3 WSDL Documentation](/soap_v1-3/){:target="_blank"}
+You can view the WSDL for the SOAP API v1.5 here: [Web Service v1.5 WSDL Documentation](https://uat.pathwaysdos.nhs.uk/app/api/webservices?wsdl=1.5)
 
 
 ## Web Methods
@@ -60,8 +61,6 @@ The SOAP API provides the following methods:
 | GetHospitalScores  | Retrieve capacity data for a specific set of hospitals | 
 
 The path to the SOAP API is: **https://???.pathwaysdos.nhs.uk/app/api/webservices** where **???** is replaced with the subdomain relating to the [environment](/environments_overview.html) you are targeting.
-
-You can grab the latest version (v1.3) of the WSDL from here: [https://www.pathwaysdos.nhs.uk/app/api/webservices?wsdl=1.3](https://www.pathwaysdos.nhs.uk/app/api/webservices?wsdl=1.3){:target="_blank"}
 
 
 ### [CheckCapacitySummary](/soap_api_ccs.html)
