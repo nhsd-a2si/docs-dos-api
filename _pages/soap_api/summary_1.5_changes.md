@@ -49,7 +49,7 @@ Currently the search will only use the distance passed in the request if there i
 
 An override option will prioritise the distance in the web service over that stored in the DoS. This function should be used with caution, and primarily for testing purposes, as the postcode files in the DoS have been carefully profiled by DoS Leads.
 
-### Additional Validation on input fields
+### Additional Validation on Input Fields
 Currently if an SG is passed in which passes the formatting rules but does not exist in the DoS database, the request is accepted but the search will fail to match on any services and will invoke a catch-all response. Additional validation will be added to ensure that only SG codes which are known to the DoS can be searched, and an error will be returned if this is not the case.
 
 Currently if a disposition is passed in which passes the formatting rules but does not exist in the DoS database, the request is accepted and the search will not match against dispositions. Additional validation will be added to ensure that only disposition codes which are known to the DoS can be searched, and an error will be returned if this is not the case.
