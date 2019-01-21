@@ -68,6 +68,7 @@ These fields, grouped with the tag ‘capacityAttributes’, are:
 * Name
 * Description
 * Value
+
 This provides the flexibility for additional capacity metrics to be added in the future, without changing the web service. The names currently planned for are:
 * CurrentWaitTime
 * PatientsInDepartment
