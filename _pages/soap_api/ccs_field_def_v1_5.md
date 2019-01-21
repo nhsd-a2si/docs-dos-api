@@ -28,7 +28,7 @@ The following table details the parameters included in a Check Capacity Summary 
 |searchDistance	| No	           | int	    | 60              |	kilometres, min 1, max 99 |
 |forceSearchDistance	| No	| Boolean	| False	| When true, the distance passed in the request will be used before any pre-set search distance |
 |gender         |	No             |	string	| I	              | Available values: M, F, I |
-|SearchDateTime | No             | date/time | current date/time | Uses ISO8601 standard  |
+|SearchDateTime | No             | date/time | current date/time | Example value: `2019-01-20T08:44:00+00:00`  |
 
 
 # Response
