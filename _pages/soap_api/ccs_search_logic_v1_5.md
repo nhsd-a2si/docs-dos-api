@@ -151,7 +151,9 @@ If the service is not profiled with a matching Referral Role to that of the auth
 DoS services can be profiled with one or more age ranges, from 0 to 129 years. Younger ages may be profiled in days or month values for greater granularity. All ranges are stored in the database as to and from a number of days, and this is converted to days, months and years on screen in the DoS UI.
 
 To cater for leap years and for fluctuations in the number of days in a given month, the following calculations are used:
+
 1 month = 30.4375 days
+
 1 year = 365.25 days
 
 Ages may be passed in the request as days, months or years values, and these are converted to days prior to searching.
