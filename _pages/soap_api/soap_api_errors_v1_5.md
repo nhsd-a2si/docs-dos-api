@@ -42,12 +42,12 @@ If your SOAP request is invalid in some way, or there is an error with processin
 | xxx | Parameter Validation: invalid SG | | In development
 | 105 | Parameter Validation: Search distance must be greater than 0km and less than maximum system distance. | The maximum is a configuration parameter set in DoS – currently 99  |
 | 106 | Parameter Validation: Invalid gender supplied - supported values: M, F, I |   |
-| 106 | Parameter Validation: Invalid age format supplied - supported values Years, Months, Days, AgeGroup |   | To be re-numbered |
-| 115 | Parameter Validation: Invalid age value supplied. Supported values where Days format is used are numbers between 0-31 | | In development |
-| 116 | Parameter Validation: Invalid age value supplied. Supported values where Months format is used are whole numbers between 1-23 | | In development |
-| 117 | Parameter Validation: Invalid age value supplied. Supported values where Years format is used are whole numbers between 2-129 | | In development |
-| 114 | Parameter Validation: Invalid age supplied - mandatory field, only whole numbers allowed | | In development |
-| 118 | Parameter Validation: Invalid age value supplied. Supported values where AgeGroup is used are: 1, 2, 3, 4 | | In development |
+| 119 | Parameter Validation: Invalid age format supplied - supported values Years, Months, Days, AgeGroup |   |  |
+| 115 | Parameter Validation: Invalid age value supplied. Supported values where Days format is used are numbers between 0-31 | |  |
+| 116 | Parameter Validation: Invalid age value supplied. Supported values where Months format is used are whole numbers between 1-23 | |  |
+| 117 | Parameter Validation: Invalid age value supplied. Supported values where Years format is used are whole numbers between 2-129 | | |
+| 114 | Parameter Validation: Invalid age supplied - mandatory field, only whole numbers allowed | |  |
+| 118 | Parameter Validation: Invalid age value supplied. Supported values where AgeGroup is used are: 1, 2, 3, 4 | |  |
 | 107 | WSDL Validation: Unsupported Webservice version |   |
 | 108 | Malformed XML: The soap message is not valid xml. |   |
 | 108 | Malformed XML: Unable to identify the SOAP version | | To be renumbered |
