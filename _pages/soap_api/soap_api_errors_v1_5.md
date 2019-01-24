@@ -50,7 +50,7 @@ If your SOAP request is invalid in some way, or there is an error with processin
 | 118 | Parameter Validation: Invalid age value supplied. Supported values where AgeGroup is used are: 1, 2, 3, 4 | |  |
 | 107 | WSDL Validation: Unsupported Webservice version |   |
 | 108 | Malformed XML: The soap message is not valid xml. |   |
-| 108 | Malformed XML: Unable to identify the SOAP version | | To be renumbered |
+| 108 | Malformed XML: Unable to identify the SOAP version | | |
 | 109 | WSDL Validation: (109) - Unable to find version
 | 108 | Parameter Validation: Search date and time is invalid | Where a search date/time is passed in, this must be in a valid format | To be re-numbered |
 | 109 | Parameter Validation: searchDateTime ([value]) more than 12 months in future | | To be re-numbered |
