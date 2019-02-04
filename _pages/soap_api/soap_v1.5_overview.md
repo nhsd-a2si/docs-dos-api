@@ -34,15 +34,11 @@ v1.3
 
 v1.4
 
+v1.5 (available now in UAT3, and in Live from 05/02/19)
+
 **Default Version**
 
 v1.3
-
-**Future Version**
-
-V1.5 is currently under development. The WSDL and the API will be accessible through our UAT site from early 2019 for development purposes. Whilst the WSDL does reflect the intended changes, it is not finalised and may be subject to further changes. The API is available but all functionality may not be available and/or tested.
-
-Attempting to access the WSDL on any site other than UAT may return an incorrect version.
 
 
 ## WSDL Documentation ##
