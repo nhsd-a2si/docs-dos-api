@@ -101,7 +101,8 @@ The fields, grouped with the tag ‘serviceEndPoints', are:
 * compression
 * comment
 
-It should be noted that additional transport methods may soon be added to the endpoints functionality in the DoS, and these will be included in this version of the web service as they are developed.
+Additional transport methods to support direct booking are included in v1.5 responses. These responses use the same fields as all other endpoints, although the order may not be required for this type.
+
 
 ### Search Distance and Source
 DoS version 4.12 introduced the ability for DoS Leads to specify the optimum search distance for each postcode area. This means that the distance passed in the CheckCapacitySummary request may not be used. 
