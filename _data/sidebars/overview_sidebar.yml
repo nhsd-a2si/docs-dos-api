@@ -111,7 +111,7 @@ entries:
           url: /soap_api_sdbid_1_5.html
           output: web
         - title: WSDL Documentation
-          url: /wsdl_docs/wsdl_v15.html
+          url: /wsdl_docs\/wsdl_v15.html
           output: web
       - title: REST API
         output: web
