@@ -59,7 +59,7 @@ entries:
           url: /ccs_order_returns.html
           output: web
         - title: WSDL Documentation
-          url: /wsdl_docs/wsdl_v13.html
+          url: /wsdl_docs\/wsdl_v13.html
           output: web
         - title: ServiceDetailsById
           url: /soap_api_sdbid.html
