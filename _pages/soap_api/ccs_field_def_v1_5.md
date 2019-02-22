@@ -57,9 +57,9 @@ The following table details the Check Capacity Summary v1.5 response
 | odsCode     |	string	| ODS code of the service (not validated against ODS records) |
 |nonPublicTelephoneNo |	string	| Non-Public Phone |
 |fax |	string	| Fax Number |
-|referralText |	string |	Public Facing Information |
+|publicFacingInformation |	string |	Public Facing Information |
 |distance |	string |	Distance from patient postcode (Straight-line distance between search postcode and service postcode, in miles) |
-|notes |	string |	Referral Information (free text field intended for use by 111 Call Handlers and clinicians) |
+|referralInformation |	string |	Referral Information (free text field intended for use by 111 Call Handlers and clinicians) |
 |openAllHours |	Boolean |	True/False – if true, the service is open 24 hours a day, 7 days a week |
 |capacityAttributes    | Array   |       |
 | name, description, value |  | To allow current wait time data to be included in the response. Intially the names included will be: currentWaitTime, patientsInDepartment, patientsBeingSeen. In all cases currently, these fields will not be populated |
