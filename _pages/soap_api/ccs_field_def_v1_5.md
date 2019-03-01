@@ -40,7 +40,7 @@ The following table details the Check Capacity Summary v1.5 response
 |RequestedAtDateTime | date/time | The time that the search request was received |
 |SearchDateTime | date/time | The time used to calculate the search results |
 |SearchDistance | int | The distance used in the search |
-|SearchDistanceUsedSource | string | The source of the distance – postcode, district, sector, national, web service |
+|SearchDistanceUsedSource | string | The source of the distance – postcode, district, sector, national, override, web service |
 |CalculatedAgeInDays | int | The patient age passed in the request, converted into days |
 |id             |	string	  | The unique ID of the service |
 |capacity       |	string	  | The capacity status of the service: High = Green, Low = Amber, None = Red (will not return in Check Capacity Summary search) |
