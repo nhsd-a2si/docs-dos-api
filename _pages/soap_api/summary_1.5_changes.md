@@ -56,8 +56,6 @@ Currently if an SG is passed in which passes the formatting rules but does not e
 
 Currently if a disposition is passed in which passes the formatting rules but does not exist in the DoS database, the request is accepted and the search will not match against dispositions. Additional validation will be added to ensure that only disposition codes which are known to the DoS can be searched, and an error will be returned if this is not the case.
 
-*Note: These features are currently in development and will not be available for the first iteration of web service v1.5. They will, however, be released in DoS version 4.16, due mid-February 2019 and should be factored into any development accordingly*
-
 ### Changes To Existing Error Codes
 Some error codes are not currently unique; the affected codes will be re-numbered so that the error can be more easily identified by the code alone. Initially this only affects error 106 - invalid age format supplied, but this page will be updated as more changes are made. More detail on web service errors can be found in the 'Error Codes' page.
 
