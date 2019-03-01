@@ -20,7 +20,7 @@ The following table details the parameters included in a Check Capacity Summary 
 |caseId           |	No             |	string	| N/A	            | Reference used by provider system – not used in search but included in audit logs and used for support purposes |
 |postcode         |	Yes            |	string  |	N/A	            | Must be a valid UK postcode |
 |surgery          |	No	           |string    |	N/A	            | GP surgery ODS code |
-|age	            |Yes             |	int     |	N/A             |	min 0, max 129 – accepted value is dependent on age format used. Days = 0-31, Months = 1-23, Years = 2-129|
+|age	            |Yes             |	int     |	N/A             |	min 0, max 129 – accepted value is dependent on age format used. Days = 0-31, Months = 1-23, Years = 2-129, AgeGroup = 1-4|
 |ageFormat        |Yes             |	string	| N/A	            | Available values: Days, Months, Years, AgeGroup |
 |disposition      |	No             |	int     |	N/A             |	Disposition ID |
 |symptomGroup	    | Yes            |	int     |	N/A             |	Symptom Group ID |
