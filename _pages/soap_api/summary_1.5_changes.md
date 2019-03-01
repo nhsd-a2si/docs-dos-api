@@ -27,11 +27,13 @@ Version 1.5 of the CheckCapacitySummary search will allow a more granular search
 
 The AgeFormat field will remain in place but will allow entry of two new formats – Months and Days – in addition to the existing Years and Groups.
 
-The Age field will remain in place, but modified to allow a number between 2 - 129, but additional validation will ensure that only valid numbers are entered according to the age format used.
+The Age field will remain in place, and allow a number between 0 - 129, but additional validation will ensure that only valid numbers are entered according to the age format used.
+
+Years may be used where the patient aged between 2 and 129 years.
+
+Months may be used where the patient is less than two years old, the upper limit being 23 months (to include the day before the patient’s second birthday), and the lower limit being 1 month. Where the patient is two or older, then Years must be used. Where the patient is less than 1 month, then Days must be used.
 
 Days may only be used where the patient is less than one month old, the upper limit being 31 days. Where the patient is deemed to be one month or more (which could occur before the 31 day upper limit), then months should be used.
-
-Months may only be used where the patient is less than two years old, the upper limit being 23 months (to include the day before the patient’s second birthday). Where the patient is two or older, then Years must be used.
 
 If a Months or Years format is used, this will be converted to a number of days where:
 daysinmonth = 30.4375
