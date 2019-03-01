@@ -39,15 +39,8 @@ If your SOAP request is invalid in some way, or there is an error with processin
 | 102 | Service Search: No services found | This error will only return if catch-all has also failed. This most frequently occurs when the postcode is out of area – e.g. Wales or Scotland | | 
 | 103 | Request Response: Service not found | ServiceDetailsbyID endpoint only | | 
 | 104 | Parameter Validation: No valid discriminators passed/SGSD combo not valid |   |
-| xxx | Parameter Validation: invalid SG | | In development
 | 105 | Parameter Validation: Search distance must be greater than 0km and less than maximum system distance. | The maximum is a configuration parameter set in DoS – currently 99  |
 | 106 | Parameter Validation: Invalid gender supplied - supported values: M, F, I |   |
-| 119 | Parameter Validation: Invalid age format supplied - supported values Years, Months, Days, AgeGroup |   |  |
-| 115 | Parameter Validation: Invalid age value supplied. Supported values where Days format is used are numbers between 0-31 | |  |
-| 116 | Parameter Validation: Invalid age value supplied. Supported values where Months format is used are whole numbers between 1-23 | |  |
-| 117 | Parameter Validation: Invalid age value supplied. Supported values where Years format is used are whole numbers between 2-129 | | |
-| 114 | Parameter Validation: Invalid age supplied - mandatory field, only whole numbers allowed | |  |
-| 118 | Parameter Validation: Invalid age value supplied. Supported values where AgeGroup is used are: 1, 2, 3, 4 | |  |
 | 107 | WSDL Validation: Unsupported Webservice version |   |
 | 108 | Malformed XML: The soap message is not valid xml. |   |
 | 108 | Malformed XML: Unable to identify the SOAP version | | |
@@ -56,6 +49,14 @@ If your SOAP request is invalid in some way, or there is an error with processin
 | 109 | Parameter Validation: searchDateTime ([value]) more than 12 months in future | | To be re-numbered |
 | 110 | Parameter Validation: searchDateTime ([value]) more than 1 minute in the past | |  |
 | 113 | Parameter Validation: where the distance override value is true, a distance value must be provided | | |
+| 114 | Parameter Validation: Invalid age supplied - mandatory field, only whole numbers allowed | |  |
+| 115 | Parameter Validation: Invalid age value supplied. Supported values where Days format is used are numbers between 0-31 | |  |
+| 116 | Parameter Validation: Invalid age value supplied. Supported values where Months format is used are whole numbers between 1-23 | |  |
+| 117 | Parameter Validation: Invalid age value supplied. Supported values where Years format is used are whole numbers between 2-129 | | |
+| 118 | Parameter Validation: Invalid age value supplied. Supported values where AgeGroup is used are: 1, 2, 3, 4 | |  |
+| 119 | Parameter Validation: Invalid age format supplied - supported values Years, Months, Days, AgeGroup |   |  |
+| 120 | Parameter Validation: Symptom Group could not be found | |
+| 121 | Parameter Validation: Disposition not found | |
 | 300 | Unable to login to DoS web services | Generic error (usually a system level issue) |
 | 302 | Authentication failed: Please check user credentials (username/password) or check whether the user account is locked (use password reset to unlock) |  | To be re-numbered |
 | 302 | Authentication Failed: Please check that the user has the correct privileges to run this service | Usually because the user does not have the correct permission on their account | 
