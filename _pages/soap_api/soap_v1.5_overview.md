@@ -34,7 +34,7 @@ v1.3
 
 v1.4
 
-v1.5 (available now in UAT3, and in Live from 05/02/19)
+v1.5
 
 **Default Version**
 
