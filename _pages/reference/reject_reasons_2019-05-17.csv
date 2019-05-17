@@ -1,0 +1,11 @@
+﻿23,Recommended service not clinically appropriate
+21,Unsuitable due to transport/distance
+22,Rejected for capacity reasons
+24,Service declined referral or could not be contacted
+26,Patient choice
+31,No appointments
+32,Available appointments not suitable
+40,Patient not eligible for service
+41,Patient requires home visit
+42,Journey to service not practical
+99,Other reason
