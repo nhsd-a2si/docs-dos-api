@@ -140,27 +140,27 @@ entries:
           output: web
 
   - title: Reference Data
+    output: web
+    folderitems:
+    - title: Reject Reasons
+      url: /reject_reasons.html
       output: web
-      folderitems:
-      - title: Reject Reasons
-        url: /reject_reasons.html
-        output: web
 
   - title: Deploy
+    output: web
+    folderitems:
+    - title: Overview
+      url: /deploy_overview.html
       output: web
-      folderitems:
-      - title: Overview
-        url: /deploy_overview.html
-        output: web
-      - title: Environments
-        url: /environments_overview.html
-        output: web
-      - title: API Limits
-        url: /api_limits.html
-        output: web
-      - title: API Monitoring
-        url: /api_monitoring.html
-        output: web
-      - title: Acceptable Usage Policy
-        url: /acceptable_usage_policy.html
-        output: web
+    - title: Environments
+      url: /environments_overview.html
+      output: web
+    - title: API Limits
+      url: /api_limits.html
+      output: web
+    - title: API Monitoring
+      url: /api_monitoring.html
+      output: web
+    - title: Acceptable Usage Policy
+      url: /acceptable_usage_policy.html
+      output: web
