@@ -1,4 +1,5 @@
-﻿23,Recommended service not clinically appropriate
+﻿ReasonId, ReasonText
+23,Recommended service not clinically appropriate
 21,Unsuitable due to transport/distance
 22,Rejected for capacity reasons
 24,Service declined referral or could not be contacted
