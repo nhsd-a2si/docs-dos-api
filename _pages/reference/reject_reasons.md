@@ -15,7 +15,7 @@ summary: Reference data for service rejection reasons
 | 21 | Unsuitable due to transport/distance |	N | N |
 | 22 | Rejected for capacity reasons | N | N |
 | 24 | Service declined referral or could not be contacted | N | N |
-| 26 | Patient choice | N | N |
+| 26 | Patient choice | Y | N |
 | 31 | No appointments | N | N |
 | 32 | Available appointments not suitable | N | N |
 | 40 | Patient not eligible for service | N | N |
