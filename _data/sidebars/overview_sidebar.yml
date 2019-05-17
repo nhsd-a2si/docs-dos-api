@@ -139,13 +139,6 @@ entries:
           url: /byServiceId.html
           output: web
 
-#   - title: Assure
-#     output: web
-#     folderitems:
-#     - title: Overview
-#       url: /assure_overview.html
-#       output: web
-
 - title: Reference Data
     output: web
     folderitems:
