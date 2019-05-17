@@ -1,12 +1,12 @@
-﻿ReasonId, ReasonText
-23,Recommended service not clinically appropriate
-21,Unsuitable due to transport/distance
-22,Rejected for capacity reasons
-24,Service declined referral or could not be contacted
-26,Patient choice
-31,No appointments
-32,Available appointments not suitable
-40,Patient not eligible for service
-41,Patient requires home visit
-42,Journey to service not practical
-99,Other reason
+﻿ReasonId, ReasonText, RequiresComment, ClinicianOnly
+23,Recommended service not clinically appropriate, N, Y
+21,Unsuitable due to transport/distance, N, N
+22,Rejected for capacity reasons, N, N
+24,Service declined referral or could not be contacted, N, N
+26,Patient choice, Y, N
+31,No appointments, N, N
+32,Available appointments not suitable, N, N
+40,Patient not eligible for service, N, N
+41,Patient requires home visit, N, N
+42,Journey to service not practical, N, N
+99,Other reason, Y, N
