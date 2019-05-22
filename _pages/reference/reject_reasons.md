@@ -20,8 +20,7 @@ summary: Reference data for service rejection reasons
 | 32 | Available appointments not suitable | N | N |
 | 40 | Patient not eligible for service | N | N |
 | 41 | Patient requires home visit | N | N |
-| 42 | Journey to service not practical | N | N |
 | 99 | Other reason | Y | N |
 
 
-You can download a CSV of these values [here](reject_reasons_2019-05-17.csv)
+You can download a CSV of these values [here](reject_reasons.csv)
