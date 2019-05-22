@@ -21,6 +21,7 @@ summary: Reference data for service rejection reasons
 | 40 | Patient not eligible for service | N | N |
 | 41 | Patient requires home visit | N | N |
 | 99 | Other reason | Y | N |
+  
+You can download a CSV of these values [here][1]
 
-
-You can download a CSV of these values [here](reject_reasons.csv)
+[1]:{{ site.url }}/downloads/reject_reasons.csv
