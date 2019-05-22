@@ -102,7 +102,7 @@ permalink: /:title/
 sitemap: false
 
 # needed for sitemap.xml file only
-url: https://nhsd-a2si.github.io/dos-api-docs/
+url: https://developer.nhs.uk/apis/dos-api
 
 repository: nhsd-a2si/dos-api-docs
 
