@@ -59,7 +59,7 @@ entries:
           url: /ccs_order_returns.html
           output: web
         - title: WSDL Documentation
-          url: /soap_v1-3/
+          url: /wsdl_docs\/wsdl_v13.html
           output: web
         - title: ServiceDetailsById
           url: /soap_api_sdbid.html
@@ -110,6 +110,9 @@ entries:
         - title: ServiceDetailsById
           url: /soap_api_sdbid_1_5.html
           output: web
+        - title: WSDL Documentation
+          url: /wsdl_docs\/wsdl_v15.html
+          output: web
       - title: REST API
         output: web
         url: /rest_api_overview.html
@@ -136,11 +139,11 @@ entries:
           url: /byServiceId.html
           output: web
 
-  - title: Assure
+  - title: Reference Data
     output: web
     folderitems:
-    - title: Overview
-      url: /assure_overview.html
+    - title: Reject Reasons
+      url: /reject_reasons.html
       output: web
 
   - title: Deploy

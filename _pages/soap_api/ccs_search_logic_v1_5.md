@@ -45,25 +45,31 @@ This distance field in the request is validated against the following rules:
 * This is an optional field
 * Distances are in kilometres
 * Must be a number between 1 and 99 (any other value will return an error only where it has not been overridden by a value in the database)
+* Where the distance override value is True, a distance value must be entered
 
 The search distance to be used is calculated in the following order:
-1. The distance listed in the table where there is an exact match to the full Postcode
+
+1. Where forceSearchDistance is True, the distance value passed in the request is used (SearchDistanceUsedSource = "Override")
+
+Where the forceSearchDistance is False or empty, then;
+
+2. The distance listed in the table where there is an exact match to the full Postcode (SearchDistanceUsedSource = "Postcode")
 
 Where there is no match, then;
 
-2. The distance listed in the table where there is an exact match to the postcode Sector
+3. The distance listed in the table where there is an exact match to the postcode Sector (SearchDistanceUsedSource = "Sector")
 
 Where there is no match, then;
 
-3. The distance listed in the table where there is an exact match to the postcode District
+4. The distance listed in the table where there is an exact match to the postcode District (SearchDistanceUsedSource = "District")
 
 Where there is no match, then;
 
-4. The search distance value entered in search request
+5. The search distance value entered in search request (SearchDistanceUsedSource = "Web Service")
 
 Where a distance is not passed in, then;
 
-5. Use the National default value
+6. Use the National default value (SearchDistanceUsedSource = "National")
 
 
 ### Validate Postcode

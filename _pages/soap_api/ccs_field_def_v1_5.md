@@ -20,7 +20,7 @@ The following table details the parameters included in a Check Capacity Summary 
 |caseId           |	No             |	string	| N/A	            | Reference used by provider system – not used in search but included in audit logs and used for support purposes |
 |postcode         |	Yes            |	string  |	N/A	            | Must be a valid UK postcode |
 |surgery          |	No	           |string    |	N/A	            | GP surgery ODS code |
-|age	            |Yes             |	int     |	N/A             |	min 0, max 129 – accepted value is dependent on age format used. Days = 0-31, Months = 1-23, Years = 2-129|
+|age	            |Yes             |	int     |	N/A             |	min 0, max 129 – accepted value is dependent on age format used. Days = 0-31, Months = 1-23, Years = 2-129, AgeGroup = 1-4|
 |ageFormat        |Yes             |	string	| N/A	            | Available values: Days, Months, Years, AgeGroup |
 |disposition      |	No             |	int     |	N/A             |	Disposition ID |
 |symptomGroup	    | Yes            |	int     |	N/A             |	Symptom Group ID |
@@ -28,7 +28,7 @@ The following table details the parameters included in a Check Capacity Summary 
 |searchDistance	| No	           | int	    | 60              |	kilometres, min 1, max 99 |
 |forceSearchDistance	| No	| Boolean	| False	| When true, the distance passed in the request will be used before any pre-set search distance |
 |gender         |	No             |	string	| I	              | Available values: M, F, I |
-|SearchDateTime | No             | date/time | current date/time | Uses ISO8601 standard  |
+|SearchDateTime | No             | date/time | current date/time | Example value: `2019-01-20T08:44:00+00:00`  |
 
 
 # Response
@@ -40,7 +40,7 @@ The following table details the Check Capacity Summary v1.5 response
 |RequestedAtDateTime | date/time | The time that the search request was received |
 |SearchDateTime | date/time | The time used to calculate the search results |
 |SearchDistance | int | The distance used in the search |
-|SearchDistanceUsedSource | string | The source of the distance – postcode, district, sector, national, web service |
+|SearchDistanceUsedSource | string | The source of the distance – postcode, district, sector, national, override, web service |
 |CalculatedAgeInDays | int | The patient age passed in the request, converted into days |
 |id             |	string	  | The unique ID of the service |
 |capacity       |	string	  | The capacity status of the service: High = Green, Low = Amber, None = Red (will not return in Check Capacity Summary search) |
@@ -57,9 +57,9 @@ The following table details the Check Capacity Summary v1.5 response
 | odsCode     |	string	| ODS code of the service (not validated against ODS records) |
 |nonPublicTelephoneNo |	string	| Non-Public Phone |
 |fax |	string	| Fax Number |
-|referralText |	string |	Public Facing Information |
+|publicFacingInformation |	string |	Public Facing Information |
 |distance |	string |	Distance from patient postcode (Straight-line distance between search postcode and service postcode, in miles) |
-|notes |	string |	Referral Information (free text field intended for use by 111 Call Handlers and clinicians) |
+|referralInformation |	string |	Referral Information (free text field intended for use by 111 Call Handlers and clinicians) |
 |openAllHours |	Boolean |	True/False – if true, the service is open 24 hours a day, 7 days a week |
 |capacityAttributes    | Array   |       |
 | name, description, value |  | To allow current wait time data to be included in the response. Intially the names included will be: currentWaitTime, patientsInDepartment, patientsBeingSeen. In all cases currently, these fields will not be populated |

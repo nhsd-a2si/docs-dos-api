@@ -27,11 +27,13 @@ Version 1.5 of the CheckCapacitySummary search will allow a more granular search
 
 The AgeFormat field will remain in place but will allow entry of two new formats – Months and Days – in addition to the existing Years and Groups.
 
-The Age field will remain in place, but modified to allow a number between 2 - 129, but additional validation will ensure that only valid numbers are entered according to the age format used.
+The Age field will remain in place, and allow a number between 0 - 129, but additional validation will ensure that only valid numbers are entered according to the age format used.
+
+Years may be used where the patient aged between 2 and 129 years.
+
+Months may be used where the patient is less than two years old, the upper limit being 23 months (to include the day before the patient’s second birthday), and the lower limit being 1 month. Where the patient is two or older, then Years must be used. Where the patient is less than 1 month, then Days must be used.
 
 Days may only be used where the patient is less than one month old, the upper limit being 31 days. Where the patient is deemed to be one month or more (which could occur before the 31 day upper limit), then months should be used.
-
-Months may only be used where the patient is less than two years old, the upper limit being 23 months (to include the day before the patient’s second birthday). Where the patient is two or older, then Years must be used.
 
 If a Months or Years format is used, this will be converted to a number of days where:
 daysinmonth = 30.4375
@@ -54,6 +56,9 @@ Currently if an SG is passed in which passes the formatting rules but does not e
 
 Currently if a disposition is passed in which passes the formatting rules but does not exist in the DoS database, the request is accepted and the search will not match against dispositions. Additional validation will be added to ensure that only disposition codes which are known to the DoS can be searched, and an error will be returned if this is not the case.
 
+### Changes To Existing Error Codes
+Some error codes are not currently unique; the affected codes will be re-numbered so that the error can be more easily identified by the code alone. Initially this only affects error 106 - invalid age format supplied, but this page will be updated as more changes are made. More detail on web service errors can be found in the 'Error Codes' page.
+
 ## New Features - CheckCapacitySummary Response
 
 ### Current Wait Times
@@ -63,6 +68,7 @@ These fields, grouped with the tag ‘capacityAttributes’, are:
 * Name
 * Description
 * Value
+
 This provides the flexibility for additional capacity metrics to be added in the future, without changing the web service. The names currently planned for are:
 * CurrentWaitTime
 * PatientsInDepartment
@@ -95,7 +101,8 @@ The fields, grouped with the tag ‘serviceEndPoints', are:
 * compression
 * comment
 
-It should be noted that additional transport methods may soon be added to the endpoints functionality in the DoS, and these will be included in this version of the web service as they are developed.
+Additional transport methods to support direct booking are included in v1.5 responses. These responses use the same fields as all other endpoints, although the order may not be required for this type.
+
 
 ### Search Distance and Source
 DoS version 4.12 introduced the ability for DoS Leads to specify the optimum search distance for each postcode area. This means that the distance passed in the CheckCapacitySummary request may not be used. 
