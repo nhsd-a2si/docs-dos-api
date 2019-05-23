@@ -36,8 +36,6 @@ port: 4005
 
 include: ["_pages"] 
 
-keep_files: ["downloads"]
-
 exclude:
   - .vscode/
   - .idea/
