@@ -9,7 +9,7 @@ clean:
 install:
 	bundle exec install
 
-builddocker:
+docker_build:
 	export JEKYLL_VERSION=3.8
 	docker run --rm \
 	--volume="$(PWD):/srv/jekyll" \
@@ -17,11 +17,11 @@ builddocker:
 	-it jekyll/jekyll:$(JEKYLL_VERSION) \
 	jekyll build
 
-servedocker:
+docker_serve:
 	export JEKYLL_VERSION=3.8
 	docker run --rm \
 	--volume="$(PWD):/srv/jekyll" \
 	--volume="$(PWD)/vendor/bundle:/usr/local/bundle" \
 	-p 4005:4005 \
 	-it jekyll/jekyll:$(JEKYLL_VERSION) \
-	jekyll serve
+	jekyll serve --incremental
