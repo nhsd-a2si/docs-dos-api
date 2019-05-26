@@ -105,7 +105,7 @@ sitemap: false
 # needed for sitemap.xml file only
 url: https://developer.nhs.uk/apis/dos-api
 
-repository: nhsd-a2si/dos-api-docs
+repository: nhsd-a2si/docs-dos-api
 
 gist:
   noscript: false

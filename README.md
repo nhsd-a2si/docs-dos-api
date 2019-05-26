@@ -4,7 +4,7 @@
 All changes to documentation should be made against the `master` branch. Changes can then be published as a release to the live Developer Network site.
 
 ## Previewing changes
-Github pages will automatically build the `master` branch to https://nhsd-a2si.github.io/dos-api-docs when a new commit is made.
+Github pages will automatically build the `master` branch to https://nhsd-a2si.github.io/docs-dos-api when a new commit is made.
 
 ## Publishing to the Developer Network (developer.nhs.uk)
 To publish content to the Developer Network, create a Pull Request from `master` to `publish` and merge the changes.
