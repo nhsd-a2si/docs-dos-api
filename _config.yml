@@ -39,6 +39,7 @@ include: ["_pages"]
 exclude:
   - .vscode/
   - .idea/
+  - vendor/
   - .gitignore
   - Gemfile.lock
 # these are the files and directories that jekyll will exclude from the build
