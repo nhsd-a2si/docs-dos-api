@@ -45,9 +45,6 @@ exclude:
   - Gemfile.lock
 # these are the files and directories that jekyll will exclude from the build
 
-keep_files:
-  - downloads/
-
 feedback_email: m.stibbs@nhs.net
 # used as a contact email for the Feedback link in the top navigation bar
 
