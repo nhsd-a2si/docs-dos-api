@@ -23,6 +23,4 @@ summary: Reference data for service rejection reasons
 | 99 | Other reason | Y | N |
   
   
-You can download a CSV of these values [here][1]
-
-[1]:/assets/reject_reasons.csv
+You can download a CSV of these values [here](downloads/reject_reasons.csv)
