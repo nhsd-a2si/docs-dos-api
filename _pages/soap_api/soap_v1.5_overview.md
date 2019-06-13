@@ -43,7 +43,7 @@ v1.3
 
 ## WSDL Documentation ##
 
-You can view the WSDL for the SOAP API v1.5 here: [Web Service v1.5 WSDL Documentation](https://uat.pathwaysdos.nhs.uk/app/api/webservices?wsdl=1.5)
+You can view the WSDL for the SOAP API v1.5 here: [Web Service v1.5 WSDL Documentation](https://www.pathwaysdos.nhs.uk/app/api/webservices?wsdl=1.5)
 
 
 ## Web Methods
