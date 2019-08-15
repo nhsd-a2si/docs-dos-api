@@ -24,4 +24,4 @@ The REST API was created to enable approved third party developers to gain acces
 
 ## Endpoint ##
 
-The REST API endpoint is: https://XXX.pathwaysdos.nhs.uk/app/controllers/api/v1.0/ where XXX refers to the instance that you are attempting to connect to.
+The REST API endpoint is: https://XXX.directoryofservices.nhs.uk/app/controllers/api/v1.0/ where XXX refers to the instance that you are attempting to connect to.
