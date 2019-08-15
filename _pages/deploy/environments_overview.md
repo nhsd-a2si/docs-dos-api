@@ -38,14 +38,18 @@ All environments require **https**.
 
 #### Production User Testing ####
 
-| **DNS Name**    | xxx.directoryofservices.nhs.uk | (URL to be confirmed once available on PaaS platform) |
-| **Dataset**     | Partial copy of live   | |
-| **Release**     | Latest                 | |
+(URL to be confirmed once available on PaaS platform)
+
+| **DNS Name**    | xxx.directoryofservices.nhs.uk |
+| **Dataset**     | Partial copy of live   | 
+| **Release**     | Latest                 | 
 
 #### UAT ####
 
-| **DNS Name**    | xxx.directoryofservices.nhs.uk | UAT environments will be made available as and when required and the URL provided |
-| **Dataset**     | Subset of live data     | |
-| **Release**     | Current Release or previous release         | |
+ UAT environments will be made available as and when required and the URL will be provided 
+
+| **DNS Name**    | xxx.directoryofservices.nhs.uk |
+| **Dataset**     | Subset of live data     |
+| **Release**     | Current Release or previous release         |
 
 
