@@ -13,6 +13,8 @@ published: true
 
 This section details the changes that have been introduced in web service v1.4, and therefore how it differs from v1.3. New functionality included in this release has been added to the CheckCapacitySummary endpoint, and the other endpoints – ServiceDetailsbyID and GetHospitalScores – are unchanged.
 
+{% include warning.html content="Support for version 1.4 of the SOAP API will end in September 2019, once the service has migrated to our PaaS platform. All users must move to version 1.5 before this time." %}
+
 ## Summary
 
 * Web service version 1.4 has a new WSDL
