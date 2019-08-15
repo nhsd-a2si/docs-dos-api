@@ -32,8 +32,6 @@ To allow for the release of new features there may be more than one supported ve
 
 v1.3
 
-v1.4
-
 v1.5
 
 **Default Version**
@@ -43,7 +41,7 @@ v1.3
 
 ## WSDL Documentation ##
 
-You can view the WSDL for the SOAP API v1.5 here: [Web Service v1.5 WSDL Documentation](https://www.pathwaysdos.nhs.uk/app/api/webservices?wsdl=1.5)
+You can view the WSDL for the SOAP API v1.5 here: [Web Service v1.5 WSDL Documentation](https://www.directoryofservices.nhs.uk/app/api/webservices?wsdl=1.5)
 
 
 ## Web Methods
@@ -56,7 +54,7 @@ The SOAP API provides the following methods:
 | [ServiceDetailsById](/soap_api_sdbid.html)   | Retrieve technical endpoint details for a specific Service ID or ODS code               |
 | GetHospitalScores  | Retrieve capacity data for a specific set of hospitals | 
 
-The path to the SOAP API is: **https://???.pathwaysdos.nhs.uk/app/api/webservices** where **???** is replaced with the subdomain relating to the [environment](/environments_overview.html) you are targeting.
+The path to the SOAP API is: **https://???.webservices.directoryofservices.nhs.uk/app/api/webservices** where **???** is replaced with the subdomain relating to the [environment](/environments_overview.html) you are targeting.
 
 
 ### [CheckCapacitySummary](/soap_api_ccs.html)
