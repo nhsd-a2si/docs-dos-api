@@ -14,7 +14,7 @@ The Case ID must be set to `TEST`
 
 e.g. in the path for the JSON / POC API:
 
-`https://uat.pathwaysdos.nhs.uk/app/controllers/api/v1.0/byServiceType/TEST/../../../../../..`
+`https://uat.directoryofservices.nhs.uk/app/controllers/api/v1.0/byServiceType/TEST/../../../../../..`
 
 e.g. in the payload for the SOAP API / Web Service:
 

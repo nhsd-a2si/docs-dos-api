@@ -12,8 +12,8 @@ There are a number of environments available, some of which are available for ge
 
   * **Live** - The production environment for use only by assured prescribing systems
   * **Pre-production** - Used for interanl non-functional testing of both API and applications
-  * **Integration** - Used for end to end application integration and user testing
-  * **UAT 2 / 3** - Used to support user acceptance testing of new releases before they are deployed to the Live environment
+  * **Production User Testing** - Used for end to end application integration and user testing
+  * **UAT** - Used to support user acceptance testing of new releases before they are deployed to the Live environment - these will be made available 
 
 Other environments created to support specific testing may be used but may only be available over a fixed time period.
 
@@ -25,31 +25,41 @@ All environments require **https**.
 
 #### Live ####
 
-| **DNS Name**    | www.pathwaysdos.nhs.uk    |
-| **Dataset**     | Live                      |
-| **Release**     | Latest                    |
+
+| **Item** | **Description**                                                                                             |
+|-----------------|-------------------------------------------------------------------------------------------------------|
+| **DNS Name**    | www.directoryofservices.nhs.uk for UI users and www.webservices.directoryofservices.nhs.uk for API users |
+| **Dataset**     | Live                                                                                                     |
+| **Release**     | Latest                                                                                                   |
 
 
 #### Pre-production ####
 
+| **Item** | **Description**                   |
+|-----------------|------------------------------|
 | **DNS Name**    | *Not externally accessible*  |
 | **Dataset**     | Copy of live                 |
 | **Release**     | Latest or next               |
 
-#### Integration ####
+#### Production User Testing ####
 
-| **DNS Name**    | uat.pathwaysdos.nhs.uk |
-| **Dataset**     | Partial copy of live   |
-| **Release**     | Latest                 |
+(URL to be confirmed once available on PaaS platform)
 
-#### UAT 2 ####
+| **Item** | **Description**                    |
+|-----------------|------------------------------|
+| **DNS Name**    | xxx.directoryofservices.nhs.uk |
+| **Dataset**     | Partial copy of live           | 
+| **Release**     | Latest                         | 
 
-| **DNS Name**    | uat2.pathwaysdos.nhs.uk |
-| **Dataset**     | Subset of live data     |
-| **Release**     | Current Release         |
+#### UAT ####
 
-#### UAT 3 ####
+ UAT environments will be made available as and when required and the URL will be provided 
 
-| **DNS Name**    | uat3.pathwaysdos.nhs.uk |
-| **Dataset**     | Subset of live data     |
-| **Release**     | Next Release            |
+| **Item** | **Description**                     |
+|-----------------|------------------------------|
+| **DNS Name**    | xxx.directoryofservices.nhs.uk        |
+| **Dataset**     | Subset of live data                   |
+| **Release**     | Current Release or previous release   |
+
+
+| **Description** | **Notes**                    |

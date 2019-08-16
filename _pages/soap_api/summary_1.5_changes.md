@@ -14,10 +14,8 @@ This section details the changes that have been introduced in web service v1.5, 
 
 New functionality included in this release has been added to the CheckCapacitySummary endpoint and the ServiceDetailsbyID endpoint. GetHospitalScores remains unchanged.
 
-* Web service version 1.5 has a new WSDL, available here (https://uat.pathwaysdos.nhs.uk/app/api/webservices?wsdl=1.5)
+* Web service version 1.5 has a new WSDL, available here (https://www.directoryofservices.nhs.uk/app/api/webservices?wsdl=1.5)
 * API version 1.5 is available in our UAT environment. Until this version is formally released, all new fields are available but not all are fully functional currently, and some have not been assured. 
-
-{% include note.html content="Web service v1.5 is still in development and may be subject to further changes." %}
 
 ## New Features – CheckCapacitySummary Request
 

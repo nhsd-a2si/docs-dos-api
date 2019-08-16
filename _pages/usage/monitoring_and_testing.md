@@ -21,7 +21,7 @@ Some consumers need to monitor the state of the DoS APIs in order to ensure they
 
 e.g. in the path for the JSON / POC API:
 
-`https://uat.pathwaysdos.nhs.uk/app/controllers/api/v1.0/byServiceType/MONITORING/1/../../../../..`
+`https://uat.directoryofservices.nhs.uk/app/controllers/api/v1.0/byServiceType/MONITORING/1/../../../../..`
 
 e.g. in the payload for the SOAP API / Web Service:
 

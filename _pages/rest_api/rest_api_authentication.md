@@ -17,7 +17,7 @@ For example using username:password of `dos:l3tm31n` would produce:
 $ curl --basic -v --user dos:l3tm31n https://www.pathwaysdos.nhs.uk/app/controllers/api/v1.0/services/byOdsCode/FA123
 
 > GET /app/controllers/api/v1.0/services/byOdsCode/FA123 HTTP/1.1
-> Host: www.pathwaysdos.nhs.uk
+> Host: www.directoryofservices.nhs.uk
 > Authorization: Basic ZG9zOmwzdG0zMW4=
 ```
 
