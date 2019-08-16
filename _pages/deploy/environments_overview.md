@@ -25,9 +25,9 @@ All environments require **https**.
 
 #### Live ####
 
-| **DNS Name**    | www.directoryofservices.nhs.uk for UI users and www.webservices.directoryofservices.nhs.uk for API users   |
-| **Dataset**     | Live                      | 
-| **Release**     | Latest                    |
+| **DNS Name** | www.directoryofservices.nhs.uk for UI users and www.webservices.directoryofservices.nhs.uk for API users |
+| **Dataset**  | Live                                                                                                     |
+| **Release**  | Latest                                                                                                   |
 
 
 #### Pre-production ####
@@ -41,15 +41,15 @@ All environments require **https**.
 (URL to be confirmed once available on PaaS platform)
 
 | **DNS Name**    | xxx.directoryofservices.nhs.uk |
-| **Dataset**     | Partial copy of live   | 
-| **Release**     | Latest                 | 
+| **Dataset**     | Partial copy of live           | 
+| **Release**     | Latest                         | 
 
 #### UAT ####
 
  UAT environments will be made available as and when required and the URL will be provided 
 
-| **DNS Name**    | xxx.directoryofservices.nhs.uk |
-| **Dataset**     | Subset of live data     |
-| **Release**     | Current Release or previous release         |
+| **DNS Name**    | xxx.directoryofservices.nhs.uk        |
+| **Dataset**     | Subset of live data                   |
+| **Release**     | Current Release or previous release   |
 
 
