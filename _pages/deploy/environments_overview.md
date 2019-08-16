@@ -25,13 +25,18 @@ All environments require **https**.
 
 #### Live ####
 
-| **DNS Name** | www.directoryofservices.nhs.uk for UI users and www.webservices.directoryofservices.nhs.uk for API users |
-| **Dataset**  | Live                                                                                                     |
-| **Release**  | Latest                                                                                                   |
+
+| **Item** | **Description**                                                                                             |
+|-----------------|-------------------------------------------------------------------------------------------------------|
+| **DNS Name**    | www.directoryofservices.nhs.uk for UI users and www.webservices.directoryofservices.nhs.uk for API users |
+| **Dataset**     | Live                                                                                                     |
+| **Release**     | Latest                                                                                                   |
 
 
 #### Pre-production ####
 
+| **Item** | **Description**                   |
+|-----------------|------------------------------|
 | **DNS Name**    | *Not externally accessible*  |
 | **Dataset**     | Copy of live                 |
 | **Release**     | Latest or next               |
@@ -40,6 +45,8 @@ All environments require **https**.
 
 (URL to be confirmed once available on PaaS platform)
 
+| **Item** | **Description**                    |
+|-----------------|------------------------------|
 | **DNS Name**    | xxx.directoryofservices.nhs.uk |
 | **Dataset**     | Partial copy of live           | 
 | **Release**     | Latest                         | 
@@ -48,8 +55,11 @@ All environments require **https**.
 
  UAT environments will be made available as and when required and the URL will be provided 
 
+| **Item** | **Description**                     |
+|-----------------|------------------------------|
 | **DNS Name**    | xxx.directoryofservices.nhs.uk        |
 | **Dataset**     | Subset of live data                   |
 | **Release**     | Current Release or previous release   |
 
 
+| **Description** | **Notes**                    |
