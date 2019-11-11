@@ -14,6 +14,6 @@ Note: All values will be returned as string in the ccs response.  The data type 
 
 | **Data Type**    | **Description**    |
 |-----------------|----------------|
-|Boolean	  | This represents values of true and false only |
+|Boolean	  | This represents values of 'true' and 'false' only |
 |String     |	The value is a freetext string |
 
