@@ -99,7 +99,7 @@ entries:
           url: /soap_api_errors_1_5.html
           output: web
         - title: Service Attributes
-          url: /ccs_fields_v1.5_aervice_attribute.html
+          url: /ccs_fields_v1.5_service_attribute.html
           output: web
         - title: CCS Search Logic
           url: /ccs_logic_1_5.html
