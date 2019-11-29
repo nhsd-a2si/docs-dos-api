@@ -7,7 +7,7 @@ permalink: ccs_fields_v1.5_service_attribute.html
 published: true
 ---
 
-Each Service attribute will have a value of a specific data type.  In order to know how to interpret the value the following table lists the available data types.
+Each Service Attribute will have a value of a specific data type.  The following table provides details of valid data types.
 
 Note: All values will be returned as string in the ccs response.  The data type field will identify how the value should be interpreted.
 
