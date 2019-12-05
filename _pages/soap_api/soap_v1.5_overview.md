@@ -56,7 +56,6 @@ The SOAP API provides the following methods:
 
 The path to the SOAP API is: **https://webservice.directoryofservices.nhs.uk/app/api/webservices** where **webservice** is replaced with a subdomain specific to the [environment](https://developer.nhs.uk/apis/dos-api/environments_overview.html) you are targeting.
 
-
 ### [CheckCapacitySummary](/soap_api_ccs.html)
 
 | Type    | Description                                                                                                          |
