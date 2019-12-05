@@ -57,7 +57,7 @@ The SOAP API provides the following methods:
 | [ServiceDetailsById](/soap_api_sdbid.html)   | Retrieve technical endpoint details for a specific Service ID or ODS code               |
 | GetHospitalScores  | Retrieve capacity data for a specific set of hospitals | 
 
-The path to the SOAP API is: **https://???.webservices.directoryofservices.nhs.uk/app/api/webservices** where **???** is replaced with the subdomain relating to the [environment](/environments_overview.html) you are targeting.
+The path to the SOAP API is: **https://webservice.directoryofservices.nhs.uk/app/api/webservices** where **webservice** is replaced with a subdomain specific to the [environment](/environments_overview.html) you are targeting.
 
 You can grab the latest version (v1.3) of the WSDL from here: [https://www.directoryofservices.nhs.uk/app/api/webservices?wsdl=1.3](https://www.pathwaysdos.nhs.uk/app/api/webservices?wsdl=1.3){:target="_blank"}
 
