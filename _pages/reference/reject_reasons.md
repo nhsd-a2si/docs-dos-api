@@ -11,10 +11,6 @@ The Reject Reasons are used to collect information about why recommended service
 
 Users should be asked to select a reason whenever rejecting a recommended service from the DoS.
 
-Reasons are divided into categories, which can be used to group the reasons in a user interface to make it easier for a user to quickly select one. The `ShortReasonText` field can be used as the reason description *when the reasons are displayed within the context of their assigned categories*. 
-
-If the reasons are not displayed in the context of their categories, the full `ReasonText` field should be used.
-
 ## Reject Reasons ##
 
 | ReasonID | ReasonText | ShortReasonText | Require comment? | Clinicians only? | Category |
@@ -32,6 +28,17 @@ If the reasons are not displayed in the context of their categories, the full `R
 | 42 | Unsuitable due to distance | Distance too far | N | N | Patient |
 | 99 | Other reason | Other reason | Y | N | Other |
   
+## Using the categories ##
+
+Reasons are divided into categories, which can be used to group the reasons in a user interface to make it easier for a user to quickly select one. 
+
+The `ShortReasonText` field can be used as the reason description *when the reasons are displayed within the context of their categories*.
+
+e.g. if you implemented the Reject Reasons as individual buttons in a window, you could label the buttons in groups by their categories, and then use the `ShortReasonText` as the button labels - the grouping would give the buttons the necessary context.
+
+If the reasons are not displayed within their category groupings, the full `ReasonText` value should be used as the description.
+
+
 ## Source Data ##
 
-You can download a raw CSV of these values [here](data_downloads/reject_reasons_191218.csv)
+You can download the latest version of the Reject Reasons data here: [reject_reasons_191218.csv](data_downloads/reject_reasons_191218.csv)
