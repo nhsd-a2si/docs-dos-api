@@ -32,4 +32,4 @@ If the reasons are not displayed in the context of their categories, the full `R
   
 ## Source Data ##
 
-You can download a raw CSV of these values [here](data_downloads/reject_reasons.csv)
+You can download a raw CSV of these values [here](data_downloads/reject_reasons_draft_191218.csv)
