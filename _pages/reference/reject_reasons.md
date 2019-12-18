@@ -22,8 +22,9 @@ If the reasons are not displayed in the context of their categories, the full `R
 | 23 | Recommended service not clinically appropriate | Not clinically appropriate | N | Y | Clinician |
 | 21 | Unsuitable due to transport/distance |	Cannot travel | N | N | Patient |
 | 22 | Rejected for capacity reasons | No capacity | N | N | Service |
-| 24 | Service declined referral or could not be contacted | Referral not accepted | N | N | Service |
+| 24 | Service declined referral | Rejected referral | N | N | Service |
 | 26 | Patient choice | Patient choice | Y | N | Patient |
+| 27 | Service could not be contacted | Couldn't be contacted | N | N | Service |
 | 31 | No appointments | No appointments | N | N | Service |
 | 32 | Available appointments not suitable | Appointments not suitable | N | N | Service |
 | 40 | Patient not eligible for service | Not eligible | N | N | Patient |
