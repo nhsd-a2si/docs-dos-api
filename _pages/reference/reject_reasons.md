@@ -15,7 +15,7 @@ Users should be asked to select a reason whenever rejecting a recommended servic
 
 | ReasonID | ReasonText | ShortReasonText | Require comment? | Clinicians only? | Category |
 |-|-|-|-|-|-|
-| 21 | Unsuitable due to transport/distance |	Transport not suitable | N | N | Patient |
+| 21 | Unsuitable due to transport |	Transport not suitable | N | N | Patient |
 | 22 | Rejected for capacity reasons | No capacity | N | N | Service |
 | 23 | Service not clinically appropriate | Not clinically appropriate | Y | Y | Clinician |
 | 24 | Service declined referral | Referral rejected | Y | N | Service |
