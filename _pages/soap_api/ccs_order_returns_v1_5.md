@@ -48,4 +48,4 @@ When determining the order of services within each ranking level, the following 
 Once the services have been sorted according to the rules above, only the top two services for each service type is retained.
 
 ### Return Results
-The web service response returns all the remaining services, in the correct order, including the distance from patient value. The exact display of results is determined by the provider system, but they must be displayed in the given order.
+The web service response returns all the remaining services in the correct order, and includes the calculated distance from patient value, for information. The exact display of results is determined by the provider system, but they must be displayed in the given order.
