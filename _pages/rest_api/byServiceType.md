@@ -130,6 +130,10 @@ Where matching services are returned, the following data items should be include
 
 ## Note about repsone fields
 
+## Email
+
+This is the email address of the service and is intended for use by clinicians and not for sharing with the public.
+
 ## Opening times
 
 You may receive multiple types of opening time, and these should be treated in a priority order
