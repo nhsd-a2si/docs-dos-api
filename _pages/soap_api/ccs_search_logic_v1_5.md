@@ -127,7 +127,7 @@ The ODS code of the patient’s GP surgery can optionally be included in the req
 All services which remain as potential candidates for return following the first search pipeline now go through a second filter, to determine a final list of matching services which could be returned. Any services which fail to match on only one of the criteria listed below will be classed as ‘Gap’ services. Gap results are described separately.
 
 ### Check Capacity Status
-Capacity Status is a RAG (Red, Amber, Green) rating of how busy the service is. If this is changed to anything other than green, it is automatically reset to green after a length of time specified by the logged-in user when the status is changed. The automatic reset time is any period between fifteen minutes and twenty-four hours, in fifteen minute increments. The service may be manually reset to green at any time.
+Capacity Status is a RAG (Red, Amber, Green) rating of how busy the service is. If this is changed to anything other than green, it is automatically reset to green after a length of time specified by the logged-in user when the status is changed. The automatic reset time is any period between fifteen minutes and 5 days (or 120 hours), in fifteen minute increments. The service may be manually reset to green at any time.
 
 Services are filtered on capacity using the following rule:
 *	Capacity status must be Green or Amber – services with  a Red capacity status are not returned
