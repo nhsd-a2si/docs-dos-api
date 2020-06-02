@@ -24,7 +24,7 @@ The following rules are in place:
 *	If the search postcode cannot be matched to a CCG Organisation, use the national ranking
 
 ### Place Services in Order According to Rank
-This step uses the rank assigned to each service type – this is a number from 1-5, with 1 being the highest – and places the services in ranking order.
+This step uses the rank assigned to each service type – this is a number from 1-10, with 1 being the highest – and places the services in ranking order.
 The following rules are in place:
 *	Service Types with a higher rank are placed above those of a lower rank
 *	Where there are Service Types included in the results which have the same rank, services are ordered within the ranking column based on the distance from patient value
