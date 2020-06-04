@@ -148,6 +148,9 @@ entries:
     - title: Reject Reasons
       url: /reject_reasons.html
       output: web
+    - title: Service Types
+      url: /service_types.html
+      output: web      
 
   - title: Deploy
     output: web
