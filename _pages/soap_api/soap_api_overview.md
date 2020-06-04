@@ -14,7 +14,7 @@ The SOAP API is the primary API used by NHS 111 services. It provides consumers 
 
 {% include note.html content="The SOAP API is sometimes referred to as **CheckCapacitySummary**, which is actually one of the web methods available." %}
 
-{% include warning.html content="Support for version 1.3 of the SOAP API will end in December 2019. All users must move to version 1.5 before this time." %}
+{% include warning.html content="Support for version 1.3 of the SOAP API has ended. All users must now use version 1.5. Access to versions 1.3 and 1.4 will soon be removed" %}
 
 ## API Use Case ##
 
@@ -32,14 +32,12 @@ To allow for the release of new features there may be more than one supported ve
 
 **Current Supported Versions**
 
-v1.3
-
 v1.5
 
 
 **Default Version**
 
-v1.3
+v1.5 (from mid-June 2020)
 
 
 ## WSDL Documentation ##

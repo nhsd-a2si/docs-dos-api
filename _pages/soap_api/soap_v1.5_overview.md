@@ -30,13 +30,11 @@ To allow for the release of new features there may be more than one supported ve
 
 **Current Supported Versions**
 
-v1.3
-
 v1.5
 
 **Default Version**
 
-v1.3
+v1.5 (from mid-June 2020)
 
 
 ## WSDL Documentation ##
