@@ -30,52 +30,6 @@ entries:
       url: /api_testing.html
       output: web
     - subfolders:
-      - title: SOAP API Version 1.3
-        output: web
-        url: /soap_api_overview.html
-        subfolderitems:
-        - title: Overview
-          url: /soap_api_overview.html
-          output: web
-        - title: Authentication
-          url: /soap_api_auth.html
-          output: web
-        - title: CheckCapacitySummary
-          url: /soap_api_ccs.html
-          output: web
-        - title: Field Definition
-          url: /ccs_fields.html
-          output: web
-        - title: Errors
-          url: /soap_api_errors.html
-          output: web
-        - title: Search Logic
-          url: /ccs_logic.html
-          output: web
-        - title: Catch-all Search
-          url: ccs_catch_all.html
-          output: web
-        - title: Order of Search Returns
-          url: /ccs_order_returns.html
-          output: web
-        - title: WSDL Documentation
-          url: /wsdl_docs\/wsdl_v13.html
-          output: web
-        - title: ServiceDetailsById
-          url: /soap_api_sdbid.html
-          output: web
-    - subfolders:
-      - title: SOAP API Version 1.4
-        output: web
-        url: /soap_v1.4_overview.html
-        subfolderitems:
-        - title: Overview
-          url: /soap_v1.4_overview.html
-          output: web
-        - title: Field Definition
-          url: /ccs_fields_v1.4.html
-          output: web   
-    - subfolders:
       - title: SOAP API Version 1.5
         output: web
         url: /soap_api_overview_1_5.html
@@ -116,6 +70,52 @@ entries:
         - title: WSDL Documentation
           url: /wsdl_docs\/wsdl_v15.html
           output: web
+    - subfolders:
+      - title: SOAP API Version 1.3 (unsupported)
+        output: web
+        url: /soap_api_overview.html
+        subfolderitems:
+        - title: Overview
+          url: /soap_api_overview.html
+          output: web
+        - title: Authentication
+          url: /soap_api_auth.html
+          output: web
+        - title: CheckCapacitySummary
+          url: /soap_api_ccs.html
+          output: web
+        - title: Field Definition
+          url: /ccs_fields.html
+          output: web
+        - title: Errors
+          url: /soap_api_errors.html
+          output: web
+        - title: Search Logic
+          url: /ccs_logic.html
+          output: web
+        - title: Catch-all Search
+          url: ccs_catch_all.html
+          output: web
+        - title: Order of Search Returns
+          url: /ccs_order_returns.html
+          output: web
+        - title: WSDL Documentation
+          url: /wsdl_docs\/wsdl_v13.html
+          output: web
+        - title: ServiceDetailsById
+          url: /soap_api_sdbid.html
+          output: web
+    - subfolders:
+      - title: SOAP API Version 1.4 (unsupported)
+        output: web
+        url: /soap_v1.4_overview.html
+        subfolderitems:
+        - title: Overview
+          url: /soap_v1.4_overview.html
+          output: web
+        - title: Field Definition
+          url: /ccs_fields_v1.4.html
+          output: web   
       - title: REST API
         output: web
         url: /rest_api_overview.html
@@ -141,7 +141,7 @@ entries:
         - title: byServiceId
           url: /byServiceId.html
           output: web
-
+          
   - title: Reference Data
     output: web
     folderitems:
