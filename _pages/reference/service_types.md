@@ -1,4 +1,16 @@
+---
+title: Service Types
+keywords: reference
+tags: [reference]
+sidebar: overview_sidebar
+permalink: service_types.html
+summary: DoS Service Types
+---
+
+## Service Types ##
+
 |id	|name|
+|-|-|
 |-2	|Local Templates|
 |-1	|DoS Region|
 |3	|Council|
