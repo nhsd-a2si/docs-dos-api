@@ -100,7 +100,7 @@ Where matching services are returned, the following data items should be include
 * Endpoints
 
 
-## Note about repsone fields
+## Note about repsonse fields
 
 ## Email
 
