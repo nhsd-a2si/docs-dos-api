@@ -2,13 +2,12 @@
 title: Check Capacity Summary Field Definition v1.5 - Details of Active Service Attributes
 keywords: develop
 tags: [testing,integration,deployment]
-sidebar: overview_sidebar
-permalink: ccs_fields_v1.5_service_attribute_detail.html
+permalink: ccs_fields_v1_5_service_attribute_detail.html
 published: true
 ---
 
 The following table lists all Service Attributes currenty active in DoS.
 
-| **Attribute Name**    | **Data Type**    |  **Description**   |
+| **Attribute Name** | **Data Type** | **Description** |
 |-----------------|---------|------------------------------------------------------------------------------------------|
 |requirebooking	  | Boolean | This Attribute identifies that the Service can only be referred into with an Appointment.|
