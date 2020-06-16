@@ -138,8 +138,8 @@ Symptom Discriminators are matched using the following rules:
 *	A null value is not accepted and will return an error
 *	The value must be correctly formatted, and incorrect formatting will return an error
 *	Multiple SDs are accepted but any duplicates which are requested will be removed
-*	SDs which are not a valid combination with the SG provided will be removed
-Services which are not profiled with one or more of the remaining SDs will not be returned.
+*	SDs which are not a valid combination with the SG provided will be removed 
+*  Services which are not profiled with all of the remaining SDs will not be returned
 
 ### Match Disposition (DX)
 Dispositions are also determined by the Pathways system and are stored in the DoS as Dispositions (each of which is given a Dx code) and Disposition Groups. Usually this is a one to one relationship and the group has the same description as the disposition, and it is these which are used in the Check Capacity Search, but when searching through the UI (Clinical Search) it is possible to select a group which is linked to multiple Dispositions and therefore match against multiple dispositions at once.
