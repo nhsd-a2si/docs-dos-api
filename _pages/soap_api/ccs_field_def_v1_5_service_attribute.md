@@ -16,4 +16,4 @@ Note: All values will be returned as string in the ccs response.  The data type 
 |Boolean	  | This represents values of 'true' and 'false' only |
 |String     |	The value is a freetext string |
 
-See specific details about all current service attributes
+See specific details about all ([current service attributes](https://developer.nhs.uk/apis/dos-api/ccs_field_def_v1.5_service_attribute_detail.html))
