@@ -2,7 +2,7 @@
 title: Check Capacity Summary Field Definition v1.5 - Details of Active Service Attributes
 keywords: develop
 tags: [testing,integration,deployment]
-permalink: ccs_fields_v1_5_service_attribute_detail.html
+permalink: ccs_field_def_v1_5_service_attribute_detail.html
 published: true
 ---
 
