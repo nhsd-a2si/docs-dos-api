@@ -10,4 +10,4 @@ The following table lists all Service Attributes currenty active in DoS.
 
 | **Attribute Name** | **Data Type** | **Description** |  **DoS Profile Notes**  |
 |-----------------|---------|------------------------------------------------------------------------------------------|-------------------------------------------------|
-|requirebooking	  | Boolean | This Attribute identifies that the Service can only be referred into with an Appointment.| As not all 3rd party systems are using this attribute yet it is important to maintain the referral notes on the service to indicate that referral is by appointment only alongside addition of this attribute.|
+|requirebooking	  | Boolean | This attribute identifies that the service can only be referred into with an appointment.| When adding this attribute to a service it is important to note that not all 3rd party systems are using the attribute to inform system behaviour.  Therfore it is necessary to continue to maintain the referral notes on the service to indicate that referral is by appointment only.|
