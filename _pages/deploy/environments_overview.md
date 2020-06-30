@@ -43,11 +43,10 @@ All environments require **https**.
 
 #### Production User Testing ####
 
-(URL to be confirmed once available on PaaS platform)
 
 | **Item** | **Description**                    |
 |-----------------|------------------------------|
-| **DNS Name**    | xxx.directoryofservices.nhs.uk |
+| **DNS Name**    | usertest.directoryofservices.nhs.uk |
 | **Dataset**     | Partial copy of live           | 
 | **Release**     | Latest                         | 
 
