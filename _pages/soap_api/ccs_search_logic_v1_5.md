@@ -197,6 +197,7 @@ Some services will be marked to only return from a search if they are either ope
 
 ### Check for Limited Services
 Services may be limited to one or more CCGs. These services will only return if they are limited to the CCG of the search location.
+Where the CCG of the search location is unknown, the limits will not take effect and services will not be removed for this reason.
 
 ## Gap Results
 If any services that go through the second search pipeline fail to match on only one criterion, they are recorded as having 'gapped' and can be analysed by commissioners.
