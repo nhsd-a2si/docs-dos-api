@@ -35,7 +35,7 @@ summary: DoS Service Types
 |28	|Community Hospital|
 |29	|Sexual Health|
 |30	|Single Point of Access (SPoA)|
-|38	|Community/District Nurse|
+|38	|Community/District Nursing|
 |40	|Emergency Department (ED)|
 |41	|Hospital Acute Assessment Unit (AAU)|
 |46	|Urgent Care|
