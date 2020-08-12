@@ -14,31 +14,27 @@ summary: DoS Service Types
 |-2	|Local Templates|
 |-1	|DoS Region|
 |3	|Council|
-|4	|Therapist|
-|5	|NHS Ambulance Service|
+|4	|Therapy|
+|5	|NHS Ambulance|
 |6	|Commissioning Cluster|
 |7	|Mental Health|
 |8	|Social Care|
-|11	|Voluntary Agency|
-|12	|Dental Service|
+|11	|Voluntary|
+|12	|Dental Practice|
 |13	|Pharmacy|
-|14	|Optician|
-|15	|NHS Trust|
+|14	|Optical|
 |17	|Clinic|
 |18	|Health Visitor|
 |19	|Midwifery|
-|20	|Community Based Service|
-|21	|Retired Services|
+|20	|Community Based|
+|21	|Retired|
 |22	|Commissioning Organisation|
 |24	|Care Home|
-|25	|Integrated Urgent Care (IUC) Treatment Service|
+|25	|Integrated Urgent Care (IUC) Treatment|
 |27	|Intermediate Care|
 |28	|Community Hospital|
 |29	|Sexual Health|
 |30	|Single Point of Access (SPoA)|
-|31	|Emergency Care Practitioner (ECP)|
-|32	|Primary Care Practitioner (PCP)|
-|35	|Minor Injury Unit (MIU)|
 |38	|District/Community Nurse|
 |40	|Emergency Department (ED)|
 |41	|Hospital Acute Assessment Unit (AAU)|
