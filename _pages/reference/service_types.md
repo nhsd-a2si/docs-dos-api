@@ -35,15 +35,13 @@ summary: DoS Service Types
 |28	|Community Hospital|
 |29	|Sexual Health|
 |30	|Single Point of Access (SPoA)|
-|38	|District/Community Nurse|
+|38	|Community/District Nurse|
 |40	|Emergency Department (ED)|
 |41	|Hospital Acute Assessment Unit (AAU)|
-|42	|Inpatient General Ward|
-|45	|Walk-In Centre (WIC)|
-|46	|Urgent Care Centre (UCC)|
+|46	|Urgent Care|
 |47	|Dental Emergency|
-|48	|Specialist Service|
-|49	|Multi-Disciplinary Service|
+|48	|Specialist|
+|49	|Multi-Disciplinary|
 |50	|Palliative Care|
 |100	|GP Practice|
 |105	|Emergency Department (ED) Specialist|
@@ -52,7 +50,7 @@ summary: DoS Service Types
 |109	|(Capacity) Burns (B)|
 |110	|(Capacity) Maternity and Neonate (MN)|
 |111	|(Capacity) Paediatrics (PDR)|
-|112	|Optician Enhanced Service|
+|112	|Optical Enhanced|
 |113	|Health Information|
 |114	|(Capacity) Acute Hospital|
 |115	|(Capacity) Provider Escalation/RAG|
@@ -60,16 +58,14 @@ summary: DoS Service Types
 |120	|Emergency Department (ED) Eye Casualty|
 |121	|Primary Percutaneous Coronary Intervention (PPCI)|
 |122	|Hyper-Acute Stroke Unit (HASU)|
-|123	|GP Practice Extended Hours|
 |124	|Dental Domiciliary|
-|125	|Optician Domiciliary|
+|125	|Optical Domiciliary|
 |129	|Safeguarding|
 |130	|Integrated Urgent Care (IUC) NHS 111 Call Handling Provider|
-|131	|Pharmacy Urgent Prescription|
-|132	|Pharmacy Enhanced Service|
+|132	|Pharmacy Enhanced|
 |133	|Integrated Urgent Care (IUC) Clinical Assessment Service (CAS)|
 |134	|Pharmacy Distance Selling|
 |135	|Urgent Treatment Centre (UTC)|
 |136	|GP Access Hub|
-|137	|Pharmacy Clinical Assessment Service (CAS)|
+|137	|Integrated Urgent Care (IUC) Pharmacy Clinical Assessment|
 |138	|Emergency National Response|
