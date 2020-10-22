@@ -69,3 +69,7 @@ summary: DoS Service Types
 |136	|GP Access Hub|
 |137	|Integrated Urgent Care (IUC) Pharmacy Clinical Assessment|
 |138	|Emergency National Response|
+|139  |Integrated Urgent Care (IUC) Validation|
+|140  |Same Day Emergency Care (SDEC)|
+|141  |Hospital Streaming|
+|142  |Mental Health Crisis|
