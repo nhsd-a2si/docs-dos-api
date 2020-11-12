@@ -185,12 +185,36 @@ The rules are as follows:
 *	The disposition timeframe is taken from the disposition group and is in minutes
 *	The session end time is dependent on the disposition: 
     *	0 mins (immediately) = Time of search + 60 mins
-    *	>0 & <= 30 mins = Time of search + 30 mins
+    *	`>`0 &`<`= 30 mins = Time of search + 30 mins
     *	31 – 60 mins = Time of search + Disposition
-    *	> 60 mins = Time of search + Disposition – 60 mins
+    *	`>`60 mins = Time of search + Disposition – 60 mins
     *	NULL = treated as 0 and therefore Time of search + 60 mins
 *	The service must be open within the calculated session time (i.e. between the start and end time parameters that have been calculated according to the rules) – there is no minimum timeframe. E.g. if the calculated session time window starts at 9:30 and the service closes at 9:30, this is a valid service
 *	The service must not be closing within 30 minutes of the search time
+
+### Opening times
+The DoS stores multiple types of opening time, and these are treated in the following priority order:
+
+*Specified Opening Times*
+
+These allow services to register exceptions to their usual hours and should override any other sessions that are returned, including the Open All Hours flag.
+
+*Open All Hours*
+
+If the flag is set to Open All Hours = True and there are no specified times for the given date, then the service should be treated as open 24 hours a day, 7 days a week. There should not be any standard opening times for these services but if there are, they should be ignored.
+
+*Public Holidays*
+
+Services can be profiled with a set of times or can be set to closed for all public holidays (exceptions are recorded as a specified time). If the given day is a public holiday, then this should override the standard opening times for that day.
+
+*Standard Opening Times*
+
+These are the days and times that the service is open when none of the above apply.
+
+Session times cannot extend beyond midnight for a given day, so a service which is open overnight will display as open until 23:59 on one day and will re-open at 00:00 the following day.
+
+With the exception of Open All Hours, any of the above types of opening time may have more than one session each day, and these session times may not overlap.
+
 
 ### Check for Services that Should Only Return If Open
 Some services will be marked to only return from a search if they are either open at the time of the search or are due to open within a specified timeframe (either 15 or 30 minutes) of the search time.
