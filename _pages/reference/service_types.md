@@ -34,14 +34,12 @@ summary: DoS Service Types
 |27	|Intermediate Care|
 |28	|Community Hospital|
 |29	|Sexual Health|
-|30	|Single Point of Access (SPoA)|
 |38	|Community/District Nursing|
 |40	|Emergency Department (ED)|
 |41	|Hospital Acute Assessment Unit (AAU)|
 |46	|Urgent Care|
 |47	|Dental Emergency|
 |48	|Specialist|
-|49	|Multi-Disciplinary|
 |50	|Palliative Care|
 |100	|GP Practice|
 |105	|Emergency Department (ED) Specialist|
@@ -54,7 +52,6 @@ summary: DoS Service Types
 |113	|Health Information|
 |114	|(Capacity) Acute Hospital|
 |115	|(Capacity) Provider Escalation/RAG|
-|117	|GP Choice|
 |120	|Emergency Department (ED) Eye Casualty|
 |121	|Primary Percutaneous Coronary Intervention (PPCI)|
 |122	|Hyper-Acute Stroke Unit (HASU)|
