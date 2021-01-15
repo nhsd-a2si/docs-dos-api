@@ -35,14 +35,14 @@ summary: DoS Service Types
 |28	|Community Hospital|
 |29	|Sexual Health|
 |38	|Community/District Nursing|
-|40	|Emergency Department (ED)|
+|40	|Emergency Department (ED) Catch-All|
 |41	|Hospital Acute Assessment Unit (AAU)|
 |46	|Urgent Care|
 |47	|Dental Emergency|
 |48	|Specialist|
 |50	|Palliative Care|
 |100	|GP Practice|
-|105	|Emergency Department (ED) Specialist|
+|105	|Emergency Department (ED)|
 |107	|(Capacity) Critical Care (CC)|
 |108	|(Capacity) Paediatrics Intensive Care Unit (PICU)|
 |109	|(Capacity) Burns (B)|
