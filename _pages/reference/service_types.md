@@ -71,3 +71,5 @@ summary: DoS Service Types
 |141  |Hospital Streaming|
 |142  |Mental Health Crisis|
 |143  |Sexual Assault Referral Centre (SARC)|
+|144  |Integrated Urgent Care (IUC) Dental Clinical Assessment|
+|145  |Integrated Urgent Care (IUC) Paediatric Clinical Assessment|
