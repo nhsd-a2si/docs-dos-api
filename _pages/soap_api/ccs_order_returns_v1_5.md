@@ -11,8 +11,8 @@ published: true
 
 ## Calculate Display Order of Returned Services
 
-If fewer than two services remain after the filtering processes, the Catch-all search is invoked. This is described separately.
-It two or more services remain, these are ranked and ordered so that they are displayed in the most appropriate order. This is determined by the CCG that commissions the services and is known as the Ranking Strategy.
+If no services remain after the filtering processes, the Catch-all search is invoked. This is described separately.
+It one or more services remain, these are ranked and ordered so that they are displayed in the most appropriate order. This is determined by the CCG that commissions the services and is known as the Ranking Strategy.
 
 
 ### Check Ranking Strategy
@@ -45,7 +45,13 @@ When determining the order of services within each ranking level, the following 
 4.	All others
 
 ### Remove Surplus Results
-Once the services have been sorted according to the rules above, only the top two services for each service type is retained.
+Once the services have been sorted according to the rules above, only the top two services for each service type is retained. For the following service types, only a single service is returned:
+* Emergency National Response (ID: 138)
+* GP Practice (ID: 100)
+* Integrated Urgent Care (IUC) Clinical Assessment (ID: 133)
+* Integrated Urgent Care (IUC) NHS 111 Call Handling (ID: 130)
+* Integrated Urgent Care (IUC) Pharmacy Clinical Assessment (ID: 137)
+* Integrated Urgent Care (IUC) Validation (ID: 139)
 
 ### Return Results
 The web service response returns all the remaining services in the correct order, and includes the calculated distance from patient value, for information. The exact display of results is determined by the provider system, but they must be displayed in the given order.
