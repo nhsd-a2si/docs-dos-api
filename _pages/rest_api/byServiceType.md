@@ -46,7 +46,7 @@ I - Indeterminate
 
 ## Service Type IDs
 
-A list of service types and their IDs is available [here.](https://github.com/nhsd-a2si-data/dos-reference-data) 
+A list of service types and their IDs is available in the reference data section. 
 
 
 # Request Validation Rules
