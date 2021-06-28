@@ -30,7 +30,7 @@ The following rules are in place:
 *	Where there are Service Types included in the results which have the same rank, services are ordered within the ranking column based on the distance from patient value
 
 ### Place Services in Order According to CCG
-This step checks whether a service has been promoted to a particular CCG. If any services are promoted to a CCG other than that of the search location, they will return below those that either are not promoted or are promoted to the CCG of the search location. Each group is still ordered according to the service type ranking described above.
+This step checks whether a service has been promoted to a particular CCG / LAD / LDA. If any services are promoted to an area other than that of the search location, they will return below those that either are not promoted or are promoted to the CCG of the search location. Each group is still ordered according to the service type ranking described above.
 
 ### Place Services in Order According to Service Referral
 Once services have been placed in order according to their rank, a further sort is carried out which orders each service within its given ranking level. In addition, a label of (Home) is suffixed to the service name where appropriate. This takes into account the following information:

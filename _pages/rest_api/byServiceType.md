@@ -16,14 +16,19 @@ This search method allows users to search the DoS based on service type ID, loca
 | Parameter        | Type           | Required?   | Description       |
 |------------------|----------------|-------------|-------------------|
 | caseId           | String         | No          |                   |
-| searchDistance   | Integer        | No          | Distance in miles, to a maximum of 100. If not entered, default value of 37.5 is used |
 | postcode         | String         | Yes         |                   |
+| searchDistance   | Integer        | No          | Distance in miles, to a maximum of 100. If not entered, default value of 37.5 is used |                
 | gpPracticeId     | Integer        | No          | DoS service ID of patient's GP Practice  |
 | age              | Integer        | No          | DoS age group of patient       |
 | gender           | String         | No          | Gender of patient, M,F,I  |
 | disposition      | String         | No          | Not currently used - if a value is passed in, this will be ignored   |
 | serviceTypeIds   | Array          | Yes         | ID of DoS Service Types required. Allows multiple IDs per request |
 | numberPerType    | Integer        | No          | Maximum number of services to return, per service type searched |
+
+It should be noted that where a field is marked above as not required, it should still be included in the search string, represented with a zero (0).
+
+url format: 
+/app/controllers/api/v1.0/services/byServiceType/{caseId}/{postcode}/{searchDistance}/{gpPracticeId}/{age}/{gender}/{disposition}/{serviceTypeIds}/{numberPerType}
 
 ## Age Group Definition
 ID 4: Neonate and Infant - 0 years
