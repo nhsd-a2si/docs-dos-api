@@ -220,7 +220,9 @@ With the exception of Open All Hours, any of the above types of opening time may
 Some services will be marked to only return from a search if they are either open at the time of the search or are due to open within a specified timeframe (either 15 or 30 minutes) of the search time.
 
 ### Check for Limited Services
-Services may be limited to one or more CCGs. These services will only return if they are limited to the CCG of the search location.
+Services may be limited to one or more CCGs, Local Authorities (LAD) or Locally Defined Areas (LDA). These services will only return if they are limited to the CCG / LAD / LDA of the search location, and will be removed from results for all other areas.
+
+
 Where the CCG of the search location is unknown, the limits will not take effect and services will not be removed for this reason.
 
 ## Gap Results
