@@ -26,6 +26,8 @@ This search method allows users to search the DoS based on symptoms, location an
 | symptomGroupDiscriminatorCombos   | Array          | Yes         | DoS SGSD IDs - format SGID=SDID. Only one combination per search request |
 | numberPerType    | Integer        | No          | Maximum number of services to return, per service type searched |
 
+It should be noted that where a field is marked above as not required, it should still be included in the search string, represented with a zero (0).
+
 ## Age Group Definition
 ID 4: Neonate and Infant - 0 years
 
