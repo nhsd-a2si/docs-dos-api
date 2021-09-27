@@ -73,3 +73,4 @@ summary: DoS Service Types
 |143  |Sexual Assault Referral Centre (SARC)|
 |144  |Integrated Urgent Care (IUC) Dental Clinical Assessment|
 |145  |Integrated Urgent Care (IUC) Paediatric Clinical Assessment|
+|146  |Urgent Community Response (UCR)|
