@@ -59,6 +59,7 @@ summary: DoS Service Types
 |125	|Optical Domiciliary|
 |129	|Safeguarding|
 |130	|Integrated Urgent Care (IUC) NHS 111 Call Handling Provider|
+|131  |Pharmacy Urgent Medicines Supply|
 |132	|Pharmacy Enhanced|
 |133	|Integrated Urgent Care (IUC) Clinical Assessment Service (CAS)|
 |134	|Pharmacy Distance Selling|
