@@ -135,7 +135,7 @@ Where matching services are returned, the following data items should be include
 * Endpoints
 * Distance from patient
 
-## Note about repsonse fields
+## Note about response fields
 
 ## Email
 
