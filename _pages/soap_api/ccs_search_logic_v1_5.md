@@ -153,6 +153,8 @@ Each user account is assigned one Referral Role (also known as Search Role), whi
 Services may be profiled with one or more Referral Roles, which indicate which type of user is able to refer to that service.
 If the service is not profiled with a matching Referral Role to that of the authenticated user, or is not profiled with any referral roles, the service will not return.
 
+There is often a requirement for different services to return for 111 Healthcare Advisors and 111 Clinicians. 111 supplier systems are asked to use different DoS accounts with different referral roles for these skillsets, so that services can be profiled and returned from a search accordingly.
+
 ### Check Age Format and Match on Age
 DoS services can be profiled with one or more age ranges, from 0 to 129 years. Younger ages may be profiled in days or month values for greater granularity. All ranges are stored in the database as to and from a number of days, and this is converted to days, months and years on screen in the DoS UI.
 
