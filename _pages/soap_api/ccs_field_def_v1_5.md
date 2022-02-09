@@ -45,7 +45,7 @@ The following table details the Check Capacity Summary v1.5 response
 |id             |	string	  | The unique ID of the service |
 |capacity       |	string	  | The capacity status of the service: High = Green, Low = Amber, None = Red (will not return in Check Capacity Summary search) |
 |name           |	string	 | Service Name |
-|publicName     | string   | Public Name  |
+|publicName     | string   | Public Name. Where available, public name should be displayed in preference to service name|
 | contactDetails |	string	| Public Phone Number |
 | address	      | string	   | Service Address |
 | postcode     |	string	  | Service Postcode |
