@@ -50,10 +50,6 @@ F - Female
 
 I - Indeterminate
 
-## Service Type IDs
-
-A list of service types and their IDs is available [here.](https://github.com/nhsd-a2si-data/dos-reference-data) 
-
 
 # Request Validation Rules
 
