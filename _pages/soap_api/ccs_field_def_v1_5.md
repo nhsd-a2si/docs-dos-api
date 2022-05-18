@@ -61,8 +61,8 @@ The following table details the Check Capacity Summary v1.5 response
 |distance |	string |	Distance from patient postcode (Straight-line distance between search postcode and service postcode, in miles) |
 |referralInformation |	string |	Referral Information (free text field intended for use by 111 Call Handlers and clinicians) |
 |openAllHours |	Boolean |	True/False – if true, the service is open 24 hours a day, 7 days a week |
-|capacityAttributes    | Array   |       |
-| name, description, value |  | To allow current wait time data to be included in the response. Intially the names included will be: currentWaitTime, patientsInDepartment, patientsBeingSeen. In all cases currently, these fields will not be populated |
+|capacityAttributes    | Array   |  Not in use     |
+| name, description, value |  | This data was part of a pilot to show current wait times and is not available in DoS |
 | serviceEndpoints	| Array |        |
 |  endpointOrder, transport, format, interaction, businessScenario, address, compression, comment |	| includes all available fields for each endpoint profiled against the service, which may be 0 – many. |
 | rotaSessions | Array |       |
