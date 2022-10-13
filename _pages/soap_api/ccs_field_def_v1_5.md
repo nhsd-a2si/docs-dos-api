@@ -58,7 +58,7 @@ The following table details the Check Capacity Summary v1.5 response
 |nonPublicTelephoneNo |	string	| Non-Public Phone |
 |fax |	string	| Fax Number |
 |publicFacingInformation |	string |	Public Facing Information |
-|distance |	string |	Distance from patient postcode (Straight-line distance between search postcode and service postcode, in miles) |
+|distance |	string |	Distance from patient postcode in miles. Depending on user permissions, this may be a straight-line distance or it may be the distance when travelling by road |
 |referralInformation |	string |	Referral Information (free text field intended for use by 111 Call Handlers and clinicians) |
 |openAllHours |	Boolean |	True/False – if true, the service is open 24 hours a day, 7 days a week |
 |capacityAttributes    | Array   |  Not in use     |

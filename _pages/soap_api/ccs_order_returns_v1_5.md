@@ -12,8 +12,29 @@ published: true
 ## Calculate Display Order of Returned Services
 
 If no services remain after the filtering processes, the Catch-all search is invoked. This is described separately.
-If one or more services remain, these are ranked and ordered so that they are displayed in the most appropriate order. This is determined by the CCG that commissions the services and is known as the Ranking Strategy.
+If one or more services remain, these are ranked and ordered so that they are displayed in the most appropriate order. Part of this ordering is distance and part is determined by the CCG that commissions the services, known as the Ranking Strategy.
 
+### Calculate Road Distance
+(Available from November 2022)
+
+Up to this point, distances between the patient and the services have been calculated as a straight-line between the two. As long as certain conditions are met, now the search will call out to a 3rd-party API to obtain a more accurate distance between the patient and each clinically eligible service, assuming travel by road (e.g. car).
+
+* Remaining services are grouped by Service Type and sorted within those groups by crow-flies distance
+* Home GP (where the ODS code matches the ODS code passed in the request) is placed at the top of the list to prevent it from being removed from the results 
+* The top 100 of each service type are retained and more distant services are dropped
+* Latitude/longitude values for the patient's postcode (the origin) and that of each of the remaining services (the destination) are sent to the 3rd-party API. A road distance between the origin and each destination is returned
+* The crow-flies distance is replaced with the road distance value, and used in the remaining chain to order services
+
+#### Road Distance Failure Rules
+The road distance may fail or be incomplete for various reasons, and where this happens the search will not fail, and the following rules are used:
+
+* The search reverts to crow-flies distances when:
+  * the user does not have the road distance permission
+  * lat/long values are not available for the origin postcode
+  * the API or the service that calls the API is not available
+* Where lat/long values are not available for one or more destination postcodes, these services are dropped
+* Where one or more destinations are returned from the API as unreachable (more than 4 hours away by road), these services are dropped
+* In the unlikely event that no services remain, a catch-all search will be run
 
 ### Check Ranking Strategy
 Each CCG (Clinical Commissioning Group) and LAD (Local Authority District) service in the DoS can be linked to a CCG or LAD organisation, against which the ranking strategies are stored. Ranking order is assigned to service types and not to individual services.
@@ -31,7 +52,7 @@ The following rules are in place:
 This step uses the rank assigned to each service type – this is a number from 1-10, with 1 being the highest – and places the services in ranking order.
 The following rules are in place:
 *	Service Types with a higher rank are placed above those of a lower rank
-*	Where there are Service Types included in the results which have the same rank, services are ordered within the ranking column based on the distance from patient value
+*	Where there are Service Types included in the results which have the same rank, services are ordered within the ranking column based on the distance from patient value. This will be the distance when travelling by road where available, or the crow-flies distance that was originally calculated where it is not available.
 
 ### Place Services in Order According to linked Organisation
 This step checks whether a service has been promoted to a particular CCG / LAD / LDA. If any services are promoted to an area other than that of the search location, they will return below those that either are not promoted or are promoted to the CCG of the search location. Each group is still ordered according to the service type ranking described above.

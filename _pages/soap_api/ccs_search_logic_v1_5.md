@@ -71,6 +71,7 @@ Where a distance is not passed in, then;
 
 6. Use the National default value (SearchDistanceUsedSource = "National")
 
+Where available, dependent on the requestor's permissions and the status of the API, these distances are further refined at the sorting stage, to remove services that are too far away when travelling by road and to provide more accurate distances to the patient.
 
 ### Validate Postcode
 The postcode is used to ensure that services returned are within an appropriate travelling distance for the patient and to calculate the distance from patient values which are included in the return (displayed in miles). Therefore this is a mandatory value and must be a valid postcode.
