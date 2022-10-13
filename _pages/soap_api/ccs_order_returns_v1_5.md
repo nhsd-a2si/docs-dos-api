@@ -31,7 +31,7 @@ The following rules are in place:
 This step uses the rank assigned to each service type – this is a number from 1-10, with 1 being the highest – and places the services in ranking order.
 The following rules are in place:
 *	Service Types with a higher rank are placed above those of a lower rank
-*	Where there are Service Types included in the results which have the same rank, services are ordered within the ranking column based on the distance from patient value
+*	Where there are Service Types included in the results which have the same rank, services are ordered within the ranking column based on the distance from patient value. This will be the distance when travelling by road where available, or the crow-flies distance that was originally calculated where it is not available.
 
 ### Place Services in Order According to linked Organisation
 This step checks whether a service has been promoted to a particular CCG / LAD / LDA. If any services are promoted to an area other than that of the search location, they will return below those that either are not promoted or are promoted to the CCG of the search location. Each group is still ordered according to the service type ranking described above.
