@@ -67,7 +67,7 @@ The following table details the Check Capacity Summary v1.5 response
 |  endpointOrder, transport, format, interaction, businessScenario, address, compression, comment |	| includes all available fields for each endpoint profiled against the service, which may be 0 – many. |
 | rotaSessions | Array |       |
 |   startDayOfWeek, startTime - hours, minutes - endTime - hours, minutes |  | Cycles through each day of the week and provides all opening and closing times for each day, using 24 hour clock. Includes a day named Bankholiday, which gives standard public holiday opening times for the service |
-|  openTimeSpecified |	Array |	Provides a date and time for each specified session, which are exceptions to the dates and times provided in the standard hours listings, in the format: DD-MM-YYYY-hh:mm-hh:mm. If the service is closed on a specified day, the time will display as 00:00-00:00 |
+|  openTimeSpecified |	Array |	Provides a date and time for each specified session, which are exceptions to the dates and times provided in the standard hours listings, in the format: DD-MM-YYYY-hh:mm-hh:mm. If the service is closed on a specified day, the time will be sent as 00:00-00:00 but should be interpreted as closed. |
 | attributes	|  Array |       |
 |  dataType, name, description, value  | | Each service may have 0 – many attributes, and each will be included here. An attribute is identified by a name and will be returned with a value of an identified data type ([further details](https://developer.nhs.uk/apis/dos-api/ccs_fields_v1.5_service_attribute.html)). It is possible for a service to have multiple instances of the same attribute with different values. Intially this will return no data |
 | serviceAgeRange	|  Array |         |
