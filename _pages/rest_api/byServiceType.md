@@ -133,11 +133,11 @@ Where matching services are returned, the following data items should be include
 * Distance from patient
 
 
-## Note about repsone fields
+## Note about response fields
 
 ## Email
 
-This is the email address of the service and is intended for use by clinicians and not for sharing with the public.
+__This item is not included for this search__, as the email address of the service is intended for use by clinicians and not for sharing with the public.
 
 ## Opening times
 
