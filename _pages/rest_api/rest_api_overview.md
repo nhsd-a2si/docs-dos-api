@@ -9,7 +9,7 @@ summary: An overview of the DoS REST API
 
 ## The REST API ##
 
-*Also sometimes referred to as **Proof of Concept API***
+*Previously referred to as **Proof of Concept API***
 
 The REST API was created to enable approved third party developers to gain access to DoS data. A valid DoS account is required.
 
