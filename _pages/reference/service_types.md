@@ -75,3 +75,4 @@ summary: DoS Service Types
 |144  |Integrated Urgent Care (IUC) Dental Clinical Assessment|
 |145  |Integrated Urgent Care (IUC) Paediatric Clinical Assessment|
 |146  |Urgent Community Response (UCR)|
+|147  |Covid Medicines Delivery Unit (CMDU)|
