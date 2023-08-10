@@ -76,3 +76,12 @@ summary: DoS Service Types
 |145  |Integrated Urgent Care (IUC) Paediatric Clinical Assessment|
 |146  |Urgent Community Response (UCR)|
 |147  |Covid Medicines Delivery Unit (CMDU)|
+|148  |Pharmacy Blood Pressure Check|
+|149  |Pharmacy Contraception|
+|150  |Urgent Treatment Centre (UTC) Co-Located with ED|
+|151  |Primary Care Network (PCN)|
+|152  |Primary Care Network (PCN) Enhanced Service|
+|153  |Maternity and Neonatal|
+|154  |Early Pregnancy Assessment Unit (EPAU)|
+|155  |Virtual Ward|
+|156  |Dental Urgent Care|
