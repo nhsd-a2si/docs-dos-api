@@ -100,8 +100,10 @@ Where matching services are returned, the following data items should be include
   * ID
   * Name
 * Endpoints
-
-
+* Service public name
+* Public facing information
+* Professional referral information
+  
 ## Note about response fields
 
 ## Email
@@ -143,3 +145,14 @@ The default capacity for services is Green (High) but this may be changed to Amb
 
 Where a service capacity has not been updated for more than 24 hours, this is not returned.
 
+## Public name  
+  
+An alternative name for the service that would be better known to the public, and may differ from the registered name.
+  
+## Public facing information  
+  
+Service access information available to the public.
+  
+## Professional referral information
+  
+Additional referral information.
