@@ -99,7 +99,6 @@ Where matching services are returned, the following data items should be include
   * Name
 * Endpoints
 * Service public name
-* Public facing information
 * Professional referral information
     
 
@@ -147,10 +146,6 @@ Where a service capacity has not been updated for more than 24 hours, this is no
 ## Public name  
   
 An alternative name for the service that would be better known to the public, and may differ from the registered name.
-  
-## Public facing information  
-  
-Service access information available to the public.
   
 ## Professional referral information
   

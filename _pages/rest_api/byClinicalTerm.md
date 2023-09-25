@@ -131,7 +131,6 @@ Where matching services are returned, the following data items should be include
 * Endpoints
 * Distance from patient
 * Public name
-* Public facing information
 * Professional referral information
   
 ## Note about response fields
@@ -183,10 +182,6 @@ This is a straight-line distance between the search postcode and that of the ser
 ## Public name  
   
 An alternative name for the service that would be better known to the public, and may differ from the registered name.
-  
-## Public facing information  
-  
-Service access information available to the public.
   
 ## Professional referral information
   
