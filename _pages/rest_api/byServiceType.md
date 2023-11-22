@@ -131,7 +131,8 @@ Where matching services are returned, the following data items should be include
   * Hex
 * Endpoints
 * Distance from patient
-
+* Service public name
+* Professional referral information
 
 ## Note about response fields
 
@@ -175,7 +176,14 @@ The default capacity for services is Green (High) but this may be changed to Amb
 
 Where a service capacity has not been updated for more than 24 hours, this is not returned.
 
-
 ## Distance from patient
 
 This is a straight-line distance between the search postcode and that of the service, in miles.
+
+## Public name  
+  
+An alternative name for the service that would be better known to the public, and may differ from the registered name.
+  
+## Professional referral information
+  
+Additional referral information.
