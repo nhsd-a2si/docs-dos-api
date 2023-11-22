@@ -85,3 +85,4 @@ summary: DoS Service Types
 |154  |Early Pregnancy Assessment Unit (EPAU)|
 |155  |Virtual Ward|
 |156  |Dental Urgent Care|
+|157  |Infection Hub|
