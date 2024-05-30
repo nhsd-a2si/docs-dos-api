@@ -174,8 +174,6 @@ Both public and non-public telephone numbers are included in the response. The n
 
 The default capacity for services is Green (High) but this may be changed to Amber (Low) or Red (None) for a set period of time, up to 24 hours. Services which have a Red status will return but care should be taken when deciding whether or not to display these, as they have reported that they have little or no capacity to accept new patients, or may be temporarily closed. 
 
-Where a service capacity has not been updated for more than 24 hours, this is not returned.
-
 ## Distance from patient
 
 This is a straight-line distance between the search postcode and that of the service, in miles.
