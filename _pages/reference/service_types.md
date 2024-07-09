@@ -86,3 +86,5 @@ summary: DoS Service Types
 |155  |Virtual Ward|
 |156  |Dental Urgent Care|
 |157  |Infection Hub|
+|158  |Ambulance Service Pathway|
+|159  |Primary Care Clinic|

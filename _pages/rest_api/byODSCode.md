@@ -140,7 +140,7 @@ Additional information about the service is provided in two separate fields. the
 Both public and non-public telephone numbers are included in the response. The non-public telephone numbers must not be displayed where the person using the application is not a clinician.
 ## Capacity Status
 
-The default capacity for services is Green (High) but this may be changed to Amber (Low) or Red (None) for a set period of time, up to 24 hours. Services which have a Red status will return but care should be taken when deciding whether or not to display these, as they have reported that they have little or no capacity to accept new patients, or may be temporarily closed. 
+The default capacity for services is Green (High) but this may be changed to Amber (Low) or Red (None) for a set period of time, up to 5 days. Services which have a Red status will return but care should be taken when deciding whether or not to display these, as they have reported that they have little or no capacity to accept new patients, or may be temporarily closed. 
 
 ## Public name  
   
