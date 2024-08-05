@@ -13,9 +13,7 @@ summary: DoS Service Types
 |-|-|
 |-2	|Local Templates|
 |-1	|DoS Region|
-|3	|Council|
 |4	|Therapy|
-|5	|NHS Ambulance|
 |6	|Commissioning Cluster|
 |7	|Mental Health|
 |8	|Social Care|
@@ -55,8 +53,6 @@ summary: DoS Service Types
 |120	|Emergency Department (ED) Eye Casualty|
 |121	|Primary Percutaneous Coronary Intervention (PPCI)|
 |122	|Hyper-Acute Stroke Unit (HASU)|
-|124	|Dental Domiciliary|
-|125	|Optical Domiciliary|
 |129	|Safeguarding|
 |130	|Integrated Urgent Care (IUC) NHS 111 Call Handling Provider|
 |131  |Pharmacy Urgent Medicines Supply|
